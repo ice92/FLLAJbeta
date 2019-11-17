@@ -24,7 +24,7 @@ and open the template in the editor.
             <img src="<?php echo base_url();?>/img/logo.png" class="img-fluid display-4" alt="Responsive image">
             <hr class="hr-light">
             <h6 class="mb-3">Layanan pelaporan online permasalahan lalu lintas dan jalan raya, portal informasi masalah lalu lintas dan jalan raya serta data pekerjaan jalan di Kabupaten Lombok Barat.</h6>
-            <a class="btn btn-outline-white">Lihat data pekerjaan jalan (CoST)</a> <a href="#informasi" class="btn btn-outline-white">Baca Berita Terbaru</a>
+            <a class="btn btn-outline-white">Lihat data pekerjaan jalan (CoST)</a> 
             <div class="col-md-12 text-center">
                 <hr>
 	        <h5>PENGADUAN TERBARU</h5>                            
@@ -252,7 +252,7 @@ and open the template in the editor.
         <div class="col-md-7 mb-4">
 
           <div class="view overlay z-depth-1-half">
-            <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" class="card-img-top" alt="">
+            <img src="https://fllajlombokbaratkab.or.id/foto_berita/20DSCF3217.JPG" class="card-img-top" alt="">
             <div class="mask rgba-white-light"></div>
           </div>
 
@@ -284,7 +284,7 @@ and open the template in the editor.
 
             <!--Card image-->
             <div class="view overlay">
-              <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(72).jpg" class="card-img-top"
+              <img src="https://fllajlombokbaratkab.or.id/foto_berita/18WhatsApp%20Image%202019-10-21%20at%205.35.44%20PM.jpeg" class="card-img-top"
                 alt="">
               <a href="#">
                 <div class="mask rgba-white-slight"></div>
@@ -294,10 +294,9 @@ and open the template in the editor.
             <!--Card content-->
             <div class="card-body">
               <!--Title-->
-              <h4 class="card-title">Card title</h4>
+              <h4 class="card-title">Penebangan Pohon di Lembar</h4>
               <!--Text-->
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
+              <p class="card-text">Pemotongan pohon berbahaya di daerah Lembar tepatnya di Dusun Ketirek Desa Jembatan Gantung oleh Dinas Perumahan dan Pemukiman Kabupaten Lombok Barat. Penebangan yang dilakukan hari senin 21 Oktober 2019 ini menandakan telah dilakukan penanganan untuk semua pohon berbahaya di daerah Lembar. Dinas Perumahan dan Pemukiman Kabupatetn Lombok Bara.</p>
               <a href="#!" class="btn btn-indigo">Baca Selengkapnya</a>
             </div>
 
@@ -314,7 +313,7 @@ and open the template in the editor.
 
             <!--Card image-->
             <div class="view overlay">
-              <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(72).jpg" class="card-img-top"
+              <img src="https://fllajlombokbaratkab.or.id/foto_berita/81rapat%20bulan%20september.jpg" class="card-img-top"
                 alt="">
               <a href="#">
                 <div class="mask rgba-white-slight"></div>
@@ -324,10 +323,9 @@ and open the template in the editor.
             <!--Card content-->
             <div class="card-body">
               <!--Title-->
-              <h4 class="card-title">Card title</h4>
+              <h4 class="card-title">Rapat Bulan September FLLAJ Kabupaten Lombok Barat 2019</h4>
               <!--Text-->
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
+              <p class="card-text">Forum Lalu Lintas dan Angkutan Jalan Kabupaten Lombok Barat kembali menyelenggarakan rapat bulanan pada hari Senin, 30 September 2019 pukul 09.00 WITA bertempat di Aula Dinas Perhubungan Kabupaten Lombok Barat. Imam Arief Putrajaya selaku Staff Teknis IT FLLAJ Kabupaten Lombok Barat menyampaikan bahwa dalam bulan September 2019 terdapat 7 buah...</p>
               <a href="#!" class="btn btn-indigo">Baca Selengkapnya</a>
             </div>
 
@@ -344,7 +342,7 @@ and open the template in the editor.
 
             <!--Card image-->
             <div class="view overlay">
-              <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(74).jpg" class="card-img-top"
+              <img src="https://fllajlombokbaratkab.or.id/foto_berita/24WhatsApp%20Image%202019-09-09%20at%209.14.04%20AM.jpeg" class="card-img-top"
                 alt="">
               <a href="#">
                 <div class="mask rgba-white-slight"></div>
@@ -354,10 +352,9 @@ and open the template in the editor.
             <!--Card content-->
             <div class="card-body">
               <!--Title-->
-              <h4 class="card-title">Card title</h4>
+              <h4 class="card-title">Sosialisasi Pengelolaan Sampah di Desa Golong</h4>
               <!--Text-->
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
+              <p class="card-text">Forum Lalu Lintas dan Angkutan Jalan (FLLAJ) Kabupaten Lombok Barat kembali meyelenggarakan sosialisasi pengelolaan sampah di Desa Golong. Kegiatan yang dihadiri oleh tokoh masyarakat,tokoh pemuda, tokoh perempuan, dan PKK Desa Golong ini dilaksanakan pada hari Jumat, 6 September 2019 di Aula Kantor Desa Golong Selain itu, kegiatan ini pun</p>
               <a href="#" class="btn btn-indigo">Baca Selengkapnya</a>
             </div>
 
@@ -375,7 +372,7 @@ and open the template in the editor.
 
             <!--Card image-->
             <div class="view overlay">
-              <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(75).jpg" class="card-img-top"
+              <img src="https://fllajlombokbaratkab.or.id/foto_berita/30WhatsApp%20Image%202019-09-09%20at%2012.44.03%20PM.jpeg" class="card-img-top"
                 alt="">
               <a href="#">
                 <div class="mask rgba-white-slight"></div>
@@ -385,10 +382,9 @@ and open the template in the editor.
             <!--Card content-->
             <div class="card-body">
               <!--Title-->
-              <h4 class="card-title">Card title</h4>
+              <h4 class="card-title">Ekspose Hasil KRMS Rencana Penanganan Jalan Kabupaten Lombok Barat Tahun 2020</h4>
               <!--Text-->
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
+              <p class="card-text">Sesuai dengan jadwal yang telah direncanakan oleh Dinas PUTR Kabupaten Lombok Barat, FLLAJ Kabupaten Lombok Barat menghadiri kegiatan pembahasan Kabupaten Road Maintanance System (KRMS) rencana penanganan jalan tahun 2020. Kegiatan yang dilaksanakan pada hari Jumat, 6 September 2019 di Aula Bappeda Kabupaten Lombok Barat ini juga dihadiri oleh..</p>
               <a href="#" class="btn btn-indigo">Baca Selengkapnya</a>
             </div>
 
