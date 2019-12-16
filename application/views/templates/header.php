@@ -59,12 +59,6 @@ and open the template in the editor.
                   echo '<span class="sr-only">(current)</span>';
               ?>
           </li>
-          <li class="nav-item <?php if($title=='Galery') echo 'active';?> ">
-            <a class="nav-link" href="galery">Galery</a>
-            <?php if($title=='Galery')
-                  echo '<span class="sr-only">(current)</span>';
-              ?>
-          </li>
           <li class="nav-item <?php if($title=='PRIM') echo 'active';?> ">
             <a class="nav-link" href="PRIM">PRIM</a>
             <?php if($title=='PRIM')

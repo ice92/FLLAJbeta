@@ -122,7 +122,7 @@ and open the template in the editor.
                     </h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
-                        <i class="fas fa-home"></i> Jln. Soekarno-Hatta, Gerung</p>
+                        <i class="fas fa-home mr-3"></i> Jln. Soekarno-Hatta, Gerung</p>
                     <p>
                         <i class="fa fa-envelope mr-3"></i> aduan@https://fllajlombokbaratkab.or.id/</p>
                     <p>

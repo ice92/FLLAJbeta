@@ -29,18 +29,28 @@
                                 <div class="carousel-item active">
                                     <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
                                         alt="First slide">
+                                    <div class="carousel-caption">
+                                        <h3 class="h3-responsive">Sebelum Penanganan</h3>                                        
+                                    </div>
+                                    
                                 </div>
                                 <!--/First slide-->
                                 <!--Second slide-->
                                 <div class="carousel-item">
                                     <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
                                         alt="Second slide">
+                                    <div class="carousel-caption">
+                                        <h3 class="h3-responsive">Proses</h3>                                        
+                                    </div>
                                 </div>
                                 <!--/Second slide-->
                                 <!--Third slide-->
                                 <div class="carousel-item">
                                     <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
                                         alt="Third slide">
+                                    <div class="carousel-caption">
+                                        <h3 class="h3-responsive">Sesudah Penanganan</h3>                                        
+                                    </div>
                                 </div>
                                 <!--/Third slide-->
                             </div>
@@ -251,8 +261,33 @@
                 <!--Grid row-->
                 <hr class="my-5">
                 </div>
-                <div class="col-md-3">.col-md-4</div>
+                <div class="col-md-3">
+                
+                </div>
             </div>
+<!--            <div class="row">-->
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination pg-blue pagination-lg justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item disabled">
+                        <a class="page-link" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item disabled">
+                      <a class="page-link" tabindex="-1">1</a>
+                    </li>
+                    <li class="page-item"><a class="page-link">2</a></li>
+                    <li class="page-item"><a class="page-link">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+            <!--</div>-->
             </section>
             <!--Section: Gallery-->
     
