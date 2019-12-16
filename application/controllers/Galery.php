@@ -7,11 +7,11 @@
  */
 
 /**
- * Description of News
+ * Description of Galery
  *
  * @author ice
  */
-class News extends CI_Controller{
+class Galery extends CI_Controller{
     public function __construct()
         {
                 parent::__construct();
@@ -22,12 +22,12 @@ class News extends CI_Controller{
         public function index()
         {
                 $data['news'] = $this->NewsModel->get_news();
-                $data['title'] = 'Berita';
+                $data['title'] = 'Galery';
 
                 $this->load->view('templates/header', $data);
                 $this->load->view('templates/headerpage', $data);
 //                $this->load->view('news/index', $data);
-                $this->load->view('pages/Berita', $data);
+                $this->load->view('pages/Galery', $data);
                 $this->load->view('templates/footer');
         }
 
@@ -36,7 +36,7 @@ class News extends CI_Controller{
                 $data['news_item'] = $this->NewsModel->get_news($slug);
                 if (empty($data['news_item']))
                 {
-                    show_404();
+//                    show_404();
                 }
 
                 $data['title'] = $data['news_item']['title'];

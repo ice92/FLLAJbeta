@@ -1,3 +1,4 @@
+         
 <section id="gallery" class="container-fluid">
 
                 <!-- Heading -->
@@ -254,3 +255,4 @@
             </div>
             </section>
             <!--Section: Gallery-->
+    

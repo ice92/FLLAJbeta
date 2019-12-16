@@ -48,7 +48,7 @@ and open the template in the editor.
             </a>
           </li>
           <li class="nav-item <?php if($title=='Pengaduan') echo 'active';?> ">
-            <a class="nav-link" href="#">Pengaduan</a>
+            <a class="nav-link" href="complain">Pengaduan</a>
             <?php if($title=='Pengaduan')
                   echo '<span class="sr-only">(current)</span>';
               ?>
@@ -60,25 +60,25 @@ and open the template in the editor.
               ?>
           </li>
           <li class="nav-item <?php if($title=='Galery') echo 'active';?> ">
-            <a class="nav-link" href="#">Galery</a>
+            <a class="nav-link" href="galery">Galery</a>
             <?php if($title=='Galery')
                   echo '<span class="sr-only">(current)</span>';
               ?>
           </li>
           <li class="nav-item <?php if($title=='PRIM') echo 'active';?> ">
-            <a class="nav-link" href="#">PRIM</a>
+            <a class="nav-link" href="PRIM">PRIM</a>
             <?php if($title=='PRIM')
                   echo '<span class="sr-only">(current)</span>';
               ?>
           </li>
           <li class="nav-item <?php if($title=='CoST') echo 'active';?> ">
-            <a class="nav-link" href="#">CoST</a>
+            <a class="nav-link" href="cost">CoST</a>
             <?php if($title=='CoST')
                   echo '<span class="sr-only">(current)</span>';
               ?>
           </li>
           <li class="nav-item <?php if($title=='Download') echo 'active';?> ">
-            <a class="nav-link" href="#">Download</a>
+            <a class="nav-link" href="download">Download</a>
             <?php if($title=='Download')
                   echo '<span class="sr-only">(current)</span>';
               ?>

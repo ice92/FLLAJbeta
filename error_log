@@ -1,0 +1,5 @@
+[17-Jul-2019 12:12:50 Asia/Jakarta] PHP Fatal error:  Call to a member function get_news() on null in /home/fllaj340/public_html/beta/application/controllers/News.php on line 24
+[17-Jul-2019 12:28:41 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '<' in /home/fllaj340/public_html/beta/application/views/news/view.php on line 16
+[17-Jul-2019 12:28:52 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '<' in /home/fllaj340/public_html/beta/application/views/news/view.php on line 16
+[10-Dec-2019 07:53:16 Asia/Jakarta] PHP Fatal error:  Cannot redeclare class Galery in /home/fllaj340/public_html/beta/application/views/pages/Galery.php on line 14
+[10-Dec-2019 08:01:48 Asia/Jakarta] PHP Fatal error:  Cannot redeclare class Galery in /home/fllaj340/public_html/beta/application/views/pages/Galery.php on line 14

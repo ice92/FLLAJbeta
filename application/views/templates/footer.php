@@ -15,7 +15,7 @@ and open the template in the editor.
 
         <!-- Social buttons -->
         <div class="primary-color">
-            <div class="container">
+            <div class="container-fluid">
                 <!--Grid row-->
                 <div class="row py-4 d-flex align-items-center">
 
@@ -57,7 +57,7 @@ and open the template in the editor.
         <!-- Social buttons -->
 
         <!--Footer Links-->
-        <div class="container mt-5 mb-4 text-center text-md-left">
+        <div class="container-fluid mt-5 mb-4 text-center text-md-left">
             <div class="row mt-3">
 
                 <!--First column-->
@@ -73,20 +73,23 @@ and open the template in the editor.
                 <!--Second column-->
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                     <h6 class="text-uppercase font-weight-bold">
-                        <strong>Products</strong>
+                        <strong>Statistik</strong>
                     </h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
-                        <a href="#!">MDBootstrap</a>
+                        <a href="#!">Pengaduan Bulan Lalu :0</a>
                     </p>
                     <p>
-                        <a href="#!">MDWordPress</a>
+                        <a href="#!">Pengaduan Total :352</a>
                     </p>
                     <p>
-                        <a href="#!">BrandFlow</a>
+                        <a href="#!">Pengaduan Laki-laki :19</a>
                     </p>
                     <p>
-                        <a href="#!">Bootstrap Angular</a>
+                        <a href="#!">Pengaduan Perempuan :270</a>
+                    </p>
+                    <p>
+                        <a href="#!">Pengaduan Anonim :63</a>
                     </p>
                 </div>
                 <!--/.Second column-->
@@ -94,20 +97,20 @@ and open the template in the editor.
                 <!--Third column-->
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                     <h6 class="text-uppercase font-weight-bold">
-                        <strong>Useful links</strong>
+                        <strong>Link Terkait</strong>
                     </h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
-                        <a href="#!">Your Account</a>
+                        <a href="http://dishub.lombokbaratkab.go.id/">Dinas Perhubungan Lobar</a>
                     </p>
                     <p>
-                        <a href="#!">Become an Affiliate</a>
+                        <a href="http://dputr.lombokbaratkab.go.id/">Dinas PUTR Lobar</a>
                     </p>
                     <p>
-                        <a href="#!">Shipping Rates</a>
+                        <a href="https://ntb.polri.go.id/lobar/">Polres Lobar</a>
                     </p>
                     <p>
-                        <a href="#!">Help</a>
+                        <a href="http://fllaj.ntbprov.go.id/">FLLAJ Provinsi NTB</a>
                     </p>
                 </div>
                 <!--/.Third column-->
@@ -115,17 +118,16 @@ and open the template in the editor.
                 <!--Fourth column-->
                 <div class="col-md-4 col-lg-3 col-xl-3">
                     <h6 class="text-uppercase font-weight-bold">
-                        <strong>Contact</strong>
+                        <strong>Kontak</strong>
                     </h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
-                        <i class="fas fa-home"></i></i> New York, NY 10012, US</p>
+                        <i class="fas fa-home"></i> Jln. Soekarno-Hatta, Gerung</p>
                     <p>
-                        <i class="fa fa-envelope mr-3"></i> info@example.com</p>
+                        <i class="fa fa-envelope mr-3"></i> aduan@https://fllajlombokbaratkab.or.id/</p>
                     <p>
-                        <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
-                    <p>
-                        <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+                        <i class="fa fa-phone mr-3"></i> +62 818 057 65 333</p>
+                    
                 </div>
                 <!--/.Fourth column-->
 

@@ -33,7 +33,7 @@ and open the template in the editor.
             <div class="MultiCarousel-inner">
                 <div class="item">
                     <div class="pad15">
-                        <p class="lead">Tiang RPPJ Roboh di jebatan kembar</p>
+                        <p class="lead">Tiang RPPJ Roboh di jembatan kembar</p>
                         <p>DanieSalasa</p>
                         <p>2019-10-22</p>
                         <a>Detail</a>
@@ -41,7 +41,7 @@ and open the template in the editor.
                 </div>
                 <div class="item">
                     <div class="pad15">
-                        <p class="lead">Pohon berbahaya di Desa Jembatan kembar</p>
+                        <p class="lead">Pohon berbahaya di Desa Jemba...</p>
                         <p>DeniYan</p>  
                         <p>2019-10-22</p>
                         <a>Detail</a>
