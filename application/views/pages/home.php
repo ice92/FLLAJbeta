@@ -11,6 +11,11 @@ and open the template in the editor.
 */
 -->
 <!-- Full Page Intro -->
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+
+
+
   <div class="view" style="background-image: url('<?php echo base_url();?>img/back.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
     <!-- Mask & flexbox options-->
     <div class="mask rgba-indigo-strong d-flex justify-content-center align-items-center">
@@ -147,13 +152,9 @@ and open the template in the editor.
                         <div class="modal-content">
                                 
                           <!--Body-->
-                          <div class="modal-body mb-0 p-0">
-                            
-                            <!--Google map-->
-                            <div id="map-container-google-16" class="z-depth-1-half map-container-9" style="height: 400px">
-                              <iframe src="https://maps.google.com/maps?q=new%20delphi&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                frameborder="0" style="border:0 ; width: 100%; height: 450px" allowfullscreen></iframe>
-                            </div>
+                          <div class="modal-body">
+                            <div id="map" style="width:100%;height:480px;"></div>
+
                             
                           </div>
                         
@@ -414,5 +415,15 @@ and open the template in the editor.
   </main>
   <!--Main layout-->
 
+<script>
+// variabel global marker
 
-
+	var map = L.map('map').setView([37.75, -122.23], 10);
+        L.esri.basemapLayer('Topographic').addTo(map);
+        map.whenReady(() => {
+            console.log('Map ready');
+            setTimeout(() => {
+            map.invalidateSize();
+            }, 0);
+        });
+</script>

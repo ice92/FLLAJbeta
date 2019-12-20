@@ -26,6 +26,9 @@ and open the template in the editor.
         <link href="<?php echo base_url();?>/css/style.css" rel="stylesheet">
                 <!-- carousel -->
         <link href="<?php echo base_url();?>/css/carousel.css" rel="stylesheet">
+        <!-- Load Leaflet from CDN -->
+        <link rel='stylesheet' type='text/css' href='sdk/map.css'/>
+        <script src='sdk/tomtom.min.js'></script>
     </head>
     <body>
        
