@@ -35,7 +35,7 @@ and open the template in the editor.
   <!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="home">
+      <a class="navbar-brand" href="<?php echo base_url()?>home">
         <strong>FLLAJ</strong>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,38 +44,38 @@ and open the template in the editor.
       <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item <?php if($title=='Home') echo 'active';?> ">
-            <a class="nav-link" href="home">Beranda
+            <a class="nav-link" href="<?php echo base_url()?>home">Beranda
               <?php if($title=='Home')
                   echo '<span class="sr-only">(current)</span>';
               ?>
             </a>
           </li>
           <li class="nav-item <?php if($title=='Pengaduan') echo 'active';?> ">
-            <a class="nav-link" href="complain">Pengaduan</a>
+            <a class="nav-link" href="<?php echo base_url()?>complain">Pengaduan</a>
             <?php if($title=='Pengaduan')
                   echo '<span class="sr-only">(current)</span>';
               ?>
           </li>
           <li class="nav-item <?php if($title=='Informasi') echo 'active';?> ">
-            <a class="nav-link" href="news">Informasi</a>
+            <a class="nav-link" href="<?php echo base_url()?>news">Informasi</a>
             <?php if($title=='Informasi')
                   echo '<span class="sr-only">(current)</span>';
               ?>
           </li>
           <li class="nav-item <?php if($title=='PRIM') echo 'active';?> ">
-            <a class="nav-link" href="PRIM">PRIM</a>
+            <a class="nav-link" href="<?php echo base_url()?>PRIM">PRIM</a>
             <?php if($title=='PRIM')
                   echo '<span class="sr-only">(current)</span>';
               ?>
           </li>
           <li class="nav-item <?php if($title=='CoST') echo 'active';?> ">
-            <a class="nav-link" href="cost">CoST</a>
+            <a class="nav-link" href="<?php echo base_url()?>cost">CoST</a>
             <?php if($title=='CoST')
                   echo '<span class="sr-only">(current)</span>';
               ?>
           </li>
           <li class="nav-item <?php if($title=='Download') echo 'active';?> ">
-            <a class="nav-link" href="download">Download</a>
+            <a class="nav-link" href="<?php echo base_url()?>download">Download</a>
             <?php if($title=='Download')
                   echo '<span class="sr-only">(current)</span>';
               ?>

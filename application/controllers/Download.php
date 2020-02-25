@@ -21,7 +21,7 @@ class Download extends CI_Controller{
 
         public function index()
         {
-                $data['news'] = $this->NewsModel->get_news();
+//                $data['news'] = $this->NewsModel->get_news();
                 $data['title'] = 'Download';
 
                 $this->load->view('templates/header', $data);

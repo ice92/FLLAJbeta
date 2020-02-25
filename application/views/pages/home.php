@@ -32,56 +32,46 @@ and open the template in the editor.
             <a class="btn btn-outline-white">Lihat data pekerjaan jalan (CoST)</a> 
             <div class="col-md-12 text-center">
                 <hr>
-	        <h5>PENGADUAN TERBARU</h5>                            
+	        <h5>BERITA TERBARU</h5>                            
 	    </div>
-            		<div class="MultiCarousel" data-items="1,1,3,3" data-slide="1" id="MultiCarousel"  data-interval="1000">            
+            		<div class="MultiCarousel" data-items="1,1,2,2" data-slide="1" id="MultiCarousel"  data-interval="1000">            
             <div class="MultiCarousel-inner">
                 <div class="item">
-                    <div class="pad15">
+                    <div class="pad15 overflow-hidden" style="height: 200px;">
                         <p class="lead">Tiang RPPJ Roboh di jembatan kembar</p>
-                        <p>DanieSalasa</p>
-                        <p>2019-10-22</p>
-                        <a>Detail</a>
+                        
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pad15">
+                    <div class="pad15 overflow-hidden" style="height: 200px;">
                         <p class="lead">Pohon berbahaya di Desa Jemba...</p>
-                        <p>DeniYan</p>  
-                        <p>2019-10-22</p>
-                        <a>Detail</a>
+                        
                     </div>
                 </div>
+                <a href="tes3">
                 <div class="item">
-                    <div class="pad15">
-                        <p class="lead">Pohon berbahaya di Labuapi</p>
-                        <p>Bananha</p>
-                        <p>2019-10-22</p>
-                        <a>Detail</a>
-                    </div>
+                     
+                    <div class="pad15 overflow-hidden" style="height: 200px;">
+                        <p class="lead">Pohon berbahaya di Labuapi</p>  
+                    </div>                         
                 </div>
+                    </a>
                 <div class="item">
-                    <div class="pad15">
+                    <div class="pad15 overflow-hidden" style="height: 200px;">
                         <p class="lead">Multi Item Carousel</p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <a>Detail</a>
+                        
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pad15">
+                    <div class="pad15 overflow-hidden" style="height: 200px;">
                         <p class="lead">Multi Item Carousel</p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <a>Detail</a>
+                        
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pad15">
+                    <div class="pad15 overflow-hidden" style="height: 200px;">
                         <p class="lead">Multi Item Carousel</p>
-                        <p>₹ 1</p>
-                        <p>₹ 6000</p>
-                        <a>Detail</a>
+                        
                     </div>
                 </div>                
             </div>
@@ -245,35 +235,7 @@ and open the template in the editor.
     <div class="container-fluid">
         <section id="informasi">
         <!-- Heading -->
-                <h2 class="mb-5 font-weight-bold text-center">Informasi Terbaru</h2>
-      <!--Grid row-->
-      <div class="row">
-
-        <!--Grid column-->
-        <div class="col-md-7 mb-4">
-
-          <div class="view overlay z-depth-1-half">
-            <img src="https://fllajlombokbaratkab.or.id/foto_berita/20DSCF3217.JPG" class="card-img-top" alt="">
-            <div class="mask rgba-white-light"></div>
-          </div>
-
-        </div>
-        <!--Grid column-->
-
-
-        <!--Grid column-->
-        <div class="col-md-5 mb-4">
-
-          <h2>Rapat Bulan Oktober 2019</h2>
-          <hr>
-          <p>Forum Lalu Lintas dan Angkutan Jalan Kabupaten Lombok Barat kembali menyelenggarakan rapat bulan Oktober 2019. Kegiatan rutin tersebut dilaksanakan pada hari Rabu, 30 Oktober 2019 bertempat di Ruang Sekretariat FLLAJ Kabupaten Lombok Barat ini dihadiri oleh anggota FLLAJ Kabupaten Lombok Barat. Dalam bulan ini terdapat dua agenda utama yaitu...</p>
-          <a href="https://mdbootstrap.com/" class="btn btn-indigo">Baca Selengkapnya</a>
-           
-        </div>
-        <!--Grid column-->
-
-      </div>
-      <!--Grid row-->
+                <h2 class="mb-5 font-weight-bold text-center">Pengaduan Terbaru</h2>
       <!--Grid row-->
       <div class="row">
         
@@ -281,10 +243,10 @@ and open the template in the editor.
         <div class="col-lg-3 col-md-6 mb-4">
 
           <!--Card-->
-          <div class="card">
+          <div class="card" style="height: 500px;">
 
             <!--Card image-->
-            <div class="view overlay">
+            <div class="view overlay overflow-hidden" style="height: 200px;">
               <img src="https://fllajlombokbaratkab.or.id/foto_berita/18WhatsApp%20Image%202019-10-21%20at%205.35.44%20PM.jpeg" class="card-img-top"
                 alt="">
               <a href="#">
@@ -297,7 +259,7 @@ and open the template in the editor.
               <!--Title-->
               <h4 class="card-title">Penebangan Pohon di Lembar</h4>
               <!--Text-->
-              <p class="card-text">Pemotongan pohon berbahaya di daerah Lembar tepatnya di Dusun Ketirek Desa Jembatan Gantung oleh Dinas Perumahan dan Pemukiman Kabupaten Lombok Barat. Penebangan yang dilakukan hari senin 21 Oktober 2019 ini menandakan telah dilakukan penanganan untuk semua pohon berbahaya di daerah Lembar. Dinas Perumahan dan Pemukiman Kabupatetn Lombok Bara.</p>
+              <p class="card-text">Pemotongan pohon .</p>
               <a href="#!" class="btn btn-indigo">Baca Selengkapnya</a>
             </div>
 
@@ -310,10 +272,10 @@ and open the template in the editor.
         <div class="col-lg-3 col-md-6 mb-4">
 
           <!--Card-->
-          <div class="card">
+          <div class="card" style="height: 500px;">
 
             <!--Card image-->
-            <div class="view overlay">
+            <div class="view overlay overflow-hidden" style="height: 200px;">
               <img src="https://fllajlombokbaratkab.or.id/foto_berita/81rapat%20bulan%20september.jpg" class="card-img-top"
                 alt="">
               <a href="#">
@@ -326,7 +288,7 @@ and open the template in the editor.
               <!--Title-->
               <h4 class="card-title">Rapat Bulan September FLLAJ Kabupaten Lombok Barat 2019</h4>
               <!--Text-->
-              <p class="card-text">Forum Lalu Lintas dan Angkutan Jalan Kabupaten Lombok Barat kembali menyelenggarakan rapat bulanan pada hari Senin, 30 September 2019 pukul 09.00 WITA bertempat di Aula Dinas Perhubungan Kabupaten Lombok Barat. Imam Arief Putrajaya selaku Staff Teknis IT FLLAJ Kabupaten Lombok Barat menyampaikan bahwa dalam bulan September 2019 terdapat 7 buah...</p>
+              <p class="card-text">Forum Lalu </p>
               <a href="#!" class="btn btn-indigo">Baca Selengkapnya</a>
             </div>
 
@@ -339,23 +301,23 @@ and open the template in the editor.
         <div class="col-lg-3 col-md-6 mb-4">
 
           <!--Card-->
-          <div class="card">
+          <div class="card" style="height: 500px;">
 
             <!--Card image-->
-            <div class="view overlay">
+            <div class="view overlay overflow-hidden" style="height: 200px;">
               <img src="https://fllajlombokbaratkab.or.id/foto_berita/24WhatsApp%20Image%202019-09-09%20at%209.14.04%20AM.jpeg" class="card-img-top"
                 alt="">
               <a href="#">
                 <div class="mask rgba-white-slight"></div>
               </a>
             </div>
-
+            <br>
             <!--Card content-->
             <div class="card-body">
               <!--Title-->
               <h4 class="card-title">Sosialisasi Pengelolaan Sampah di Desa Golong</h4>
               <!--Text-->
-              <p class="card-text">Forum Lalu Lintas dan Angkutan Jalan (FLLAJ) Kabupaten Lombok Barat kembali meyelenggarakan sosialisasi pengelolaan sampah di Desa Golong. Kegiatan yang dihadiri oleh tokoh masyarakat,tokoh pemuda, tokoh perempuan, dan PKK Desa Golong ini dilaksanakan pada hari Jumat, 6 September 2019 di Aula Kantor Desa Golong Selain itu, kegiatan ini pun</p>
+              <p class="card-text">Forum Lalu </p>
               <a href="#" class="btn btn-indigo">Baca Selengkapnya</a>
             </div>
 
@@ -369,10 +331,10 @@ and open the template in the editor.
         <div class="col-lg-3 col-md-6 mb-4">
 
           <!--Card-->
-          <div class="card">
+          <div class="card" style="height: 500px;">
 
             <!--Card image-->
-            <div class="view overlay">
+            <div class="view overlay overflow-hidden" style="height: 200px;">
               <img src="https://fllajlombokbaratkab.or.id/foto_berita/30WhatsApp%20Image%202019-09-09%20at%2012.44.03%20PM.jpeg" class="card-img-top"
                 alt="">
               <a href="#">
@@ -385,16 +347,121 @@ and open the template in the editor.
               <!--Title-->
               <h4 class="card-title">Ekspose Hasil KRMS Rencana Penanganan Jalan Kabupaten Lombok Barat Tahun 2020</h4>
               <!--Text-->
-              <p class="card-text">Sesuai dengan jadwal yang telah direncanakan oleh Dinas PUTR Kabupaten Lombok Barat, FLLAJ Kabupaten Lombok Barat menghadiri kegiatan pembahasan Kabupaten Road Maintanance System (KRMS) rencana penanganan jalan tahun 2020. Kegiatan yang dilaksanakan pada hari Jumat, 6 September 2019 di Aula Bappeda Kabupaten Lombok Barat ini juga dihadiri oleh..</p>
+              <p class="card-text">Sesuai dengan</p>
               <a href="#" class="btn btn-indigo">Baca Selengkapnya</a>
             </div>
 
           </div>
-          <!--/.Card-->
-
         </div>
         <!--Grid column-->
+<!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4">
 
+          <!--Card-->
+          <div class="card" style="height: 500px;">
+
+            <!--Card image-->
+            <div class="view overlay overflow-hidden" style="height: 200px;">
+              <img src="https://fllajlombokbaratkab.or.id/foto_berita/30WhatsApp%20Image%202019-09-09%20at%2012.44.03%20PM.jpeg" class="card-img-top"
+                alt="">
+              <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+
+            <!--Card content-->
+            <div class="card-body">
+              <!--Title-->
+              <h4 class="card-title">Ekspose Hasil KRMS Rencana Penanganan Jalan Kabupaten Lombok Barat Tahun 2020</h4>
+              <!--Text-->
+              <p class="card-text">Sesuai dengan</p>
+              <a href="#" class="btn btn-indigo">Baca Selengkapnya</a>
+            </div>
+
+          </div>
+        </div>
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4">
+
+          <!--Card-->
+          <div class="card" style="height: 500px;">
+
+            <!--Card image-->
+            <div class="view overlay overflow-hidden" style="height: 200px;">
+              <img src="https://fllajlombokbaratkab.or.id/foto_berita/30WhatsApp%20Image%202019-09-09%20at%2012.44.03%20PM.jpeg" class="card-img-top"
+                alt="">
+              <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+
+            <!--Card content-->
+            <div class="card-body">
+              <!--Title-->
+              <h4 class="card-title">Ekspose Hasil KRMS Rencana Penanganan Jalan Kabupaten Lombok Barat Tahun 2020</h4>
+              <!--Text-->
+              <p class="card-text">Sesuai dengan</p>
+              <a href="#" class="btn btn-indigo">Baca Selengkapnya</a>
+            </div>
+
+          </div>
+        </div>
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4">
+
+          <!--Card-->
+          <div class="card" style="height: 500px;">
+
+            <!--Card image-->
+            <div class="view overlay overflow-hidden" style="height: 200px;">
+              <img src="https://fllajlombokbaratkab.or.id/foto_berita/30WhatsApp%20Image%202019-09-09%20at%2012.44.03%20PM.jpeg" class="card-img-top"
+                alt="">
+              <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+
+            <!--Card content-->
+            <div class="card-body">
+              <!--Title-->
+              <h4 class="card-title">Ekspose Hasil KRMS Rencana Penanganan Jalan Kabupaten Lombok Barat Tahun 2020</h4>
+              <!--Text-->
+              <p class="card-text">Sesuai dengan</p>
+              <a href="#" class="btn btn-indigo">Baca Selengkapnya</a>
+            </div>
+
+          </div>
+        </div>
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4">
+
+          <!--Card-->
+          <div class="card" style="height: 500px;">
+
+            <!--Card image-->
+            <div class="view overlay overflow-hidden" style="height: 200px;">
+              <img src="https://fllajlombokbaratkab.or.id/foto_berita/30WhatsApp%20Image%202019-09-09%20at%2012.44.03%20PM.jpeg" class="card-img-top"
+                alt="">
+              <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+
+            <!--Card content-->
+            <div class="card-body d-flex flex-column">
+              <!--Title-->
+              <h4 class="card-title">Ekspose Hasil KRMS Rencana Penanganan Jalan Kabupaten Lombok Barat Tahun 2020</h4>
+              <!--Text-->
+              <p class="card-text">Sesuai dengan</p>
+              <a href="#" class="btn btn-indigo align-self-end ">Baca Selengkapnya</a>
+            </div>
+
+          </div>
+        </div>
+        <!--Grid column-->
       </div>
       <!--Grid row-->
       </div>

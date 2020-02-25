@@ -17,15 +17,16 @@ class NewsModel extends CI_Model{
                 $this->load->database();
         }
         
-    public function get_news($slug = FALSE)
+    public function get_news($perpage,$offset)
         {
-        if ($slug === FALSE)
-        {
-                $query = $this->db->get('news');
-                return $query->result_array();
+        
+                $this->db->order_by('id_berita','DESC');
+                $query = $this->db->get('berita',$perpage,$offset);
+                return $query->result_array();        
         }
-
-        $query = $this->db->get_where('news', array('slug' => $slug));
-        return $query->row_array();
+        public function get_anews($slug)
+        {
+                $query = $this->db->get_where('berita',array('id_berita' => $slug));
+                return $query->row_array();        
         }
 }

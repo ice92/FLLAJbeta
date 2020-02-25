@@ -124,7 +124,7 @@ and open the template in the editor.
                     <p>
                         <i class="fas fa-home mr-3"></i> Jln. Soekarno-Hatta, Gerung</p>
                     <p>
-                        <i class="fa fa-envelope mr-3"></i> aduan@https://fllajlombokbaratkab.or.id/</p>
+                        <i class="fa fa-envelope mr-3"></i> aduan@fllajlombokbaratkab.or.id</p>
                     <p>
                         <i class="fa fa-phone mr-3"></i> +62 818 057 65 333</p>
                     
@@ -136,7 +136,7 @@ and open the template in the editor.
         <!--/.Footer Links-->
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2019 FLLAJ Kabupaten Lombok Barat<br>
+        <div class="footer-copyright text-center py-3">© 2020 FLLAJ Kabupaten Lombok Barat<br>
             <a href="https://dfat.gov.au/"> Supported by Australian Government.</a>
         </div>
         <!-- Copyright -->
