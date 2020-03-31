@@ -14,9 +14,9 @@ and open the template in the editor.
 
 <!-- Make sure you put this AFTER Leaflet's CSS -->
 
+<!--style="background-image: url('<?php echo base_url();?>img/back.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;"-->
 
-
-  <div class="view" style="background-image: url('<?php echo base_url();?>img/back.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+  <div class="view" >
     <!-- Mask & flexbox options-->
     <div class="mask rgba-indigo-strong d-flex justify-content-center align-items-center">
       <!-- Content -->
@@ -29,51 +29,27 @@ and open the template in the editor.
             <img src="<?php echo base_url();?>/img/logo.png" class="img-fluid display-4" alt="Responsive image">
             <hr class="hr-light">
             <h6 class="mb-3">Layanan pelaporan online permasalahan lalu lintas dan jalan raya, portal informasi masalah lalu lintas dan jalan raya serta data pekerjaan jalan di Kabupaten Lombok Barat.</h6>
-            <a class="btn btn-outline-white">Lihat data pekerjaan jalan (CoST)</a> 
+            <a class="btn btn-outline-white" href="<?php echo base_url()?>cost">Lihat data pekerjaan jalan (CoST)</a> 
             <div class="col-md-12 text-center">
                 <hr>
 	        <h5>BERITA TERBARU</h5>                            
 	    </div>
             		<div class="MultiCarousel" data-items="1,1,2,2" data-slide="1" id="MultiCarousel"  data-interval="1000">            
             <div class="MultiCarousel-inner">
+                <?php foreach ($news as $news_item): ?>
+                <a href="<?php echo base_url();?>news/view/<?php echo $news_item['id_berita']; ?>" target='_blank'>
                 <div class="item">
                     <div class="pad15 overflow-hidden" style="height: 200px;">
-                        <p class="lead">Tiang RPPJ Roboh di jembatan kembar</p>
-                        
+                        <div class="view overlay ">
+                            <img src="<?php echo base_url();?>foto_berita/medium_<?php echo $news_item['gambar']; ?>" class="img-fluid " alt="zoom">
+                            <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                              <p class="white-text"><?php echo $news_item['judul']; ?></p>
+                            </div>
+                          </div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="pad15 overflow-hidden" style="height: 200px;">
-                        <p class="lead">Pohon berbahaya di Desa Jemba...</p>
-                        
-                    </div>
-                </div>
-                <a href="tes3">
-                <div class="item">
-                     
-                    <div class="pad15 overflow-hidden" style="height: 200px;">
-                        <p class="lead">Pohon berbahaya di Labuapi</p>  
-                    </div>                         
-                </div>
-                    </a>
-                <div class="item">
-                    <div class="pad15 overflow-hidden" style="height: 200px;">
-                        <p class="lead">Multi Item Carousel</p>
-                        
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15 overflow-hidden" style="height: 200px;">
-                        <p class="lead">Multi Item Carousel</p>
-                        
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pad15 overflow-hidden" style="height: 200px;">
-                        <p class="lead">Multi Item Carousel</p>
-                        
-                    </div>
-                </div>                
+                </a>
+            <?php endforeach; ?>                        
             </div>
             <button style="padding: 6px 12px 6px 12px;" class="btn btn-primary leftLst"><</button>
             <button style="padding: 6px 12px 6px 12px;" class="btn btn-primary rightLst">></button>
@@ -95,33 +71,39 @@ and open the template in the editor.
                   </h3>
                   <hr>
                 </div>
+                <form action="<?php echo base_url(). 'complain/add'; ?>" method="post">
                 <!--Body-->
                 <div class="md-form">
                   <i class="fa fa-user prefix grey-text"></i>
-                  <input type="text" id="form3" class="form-control">
+                  <input type="text" id="form3" name="nama" class="form-control">
                   <label for="form3">Nama</label>
                 </div>
                 
                 <div class="md-form">
-                  <i class="fa fa-envelope prefix grey-text"></i>
-                  <input type="text" id="form2" class="form-control">
-                  <label for="form2">Email</label>
+                  <i class="fas fa-address-card prefix grey-text"></i>
+                  <input type="text" id="form2" name="kontak" class="form-control">
+                  <label for="form2">Email/No.Hp</label>
+                </div>
+                <div class="md-form">
+                  <i class="fa fa-bullhorn prefix grey-text"></i>
+                  <input type="text" id="form4" name="judul" class="form-control">
+                  <label for="form2">Judul Pengaduan</label>
                 </div>
                 <!--Textarea with icon prefix-->
                 <div class="md-form">
                   <i class="fa fa-pencil-alt prefix grey-text"></i>
-                  <textarea type="text" id="form8" class="md-textarea form-control" rows="3"></textarea>
+                  <textarea type="text" id="form8" name="aduan" class="md-textarea form-control" rows="2"></textarea>
                   <label for="form8">Laporan anda</label>
                 </div>
                 
                 <div class="clearfix ">
                 <!-- Default inline 1-->
                     <div class="custom-control custom-radio custom-control-inline float-left ml-4">
-                      <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
+                      <input type="radio" class="custom-control-input" id="defaultInline2" name="gender" value="P">
                       <label class="custom-control-label" for="defaultInline2">Perempuan</label>
                     </div> 
                     <div class="custom-control custom-radio custom-control-inline float-left">
-                      <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
+                      <input type="radio" class="custom-control-input" id="defaultInline1" name="gender" value="L">
                       <label class="custom-control-label" for="defaultInline1">Laki-laki</label>
                     </div>
                     <!-- Default inline 2-->
@@ -130,8 +112,10 @@ and open the template in the editor.
                
                 <div class="md-form">
                     <!--<button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalRegular">Regular map modal</button>-->
-                    <a data-toggle="modal" data-target="#modalRegular"><i class="fas fa-map-marker-alt indigo-text ml-4" ></i> Lokasi   </a>
-                    <a data-toggle="modal" data-target="#modalFile"><i class="fas fa-camera-retro red-text ml-2" ></i> Lampiran   </a>
+                    <!--<a data-toggle="modal" data-target="#modalRegular"><i class="fas fa-map-marker-alt indigo-text ml-4" ></i> Lokasi   </a>-->
+                    <div class="text-center mt-3">
+                    <a data-toggle="modal" data-target="#modalFile"><i class="fas fa-camera-retro red-text ml-2" ></i> Masukan Foto   </a>
+                    </div>
                 </div>
                     <!--Modal: Name-->
                     <div class="modal fade" id="modalRegular" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -205,7 +189,8 @@ and open the template in the editor.
                     <!--Modal: Name-->
                 </div>
                 <div class="text-center mt-3">
-                  <button class="btn btn-indigo">LAPOR!</button>
+                  <button class="btn btn-indigo" type="submit" value="tambah">LAPOR!</button>
+                </form>
                   <hr>
                   <fieldset class="form-check">
                     
@@ -235,11 +220,15 @@ and open the template in the editor.
     <div class="container-fluid">
         <section id="informasi">
         <!-- Heading -->
-                <h2 class="mb-5 font-weight-bold text-center">Pengaduan Terbaru</h2>
+                
       <!--Grid row-->
+      <div class="row">
+      <div class="col-lg-9">
+          <h2 class="mb-5 font-weight-bold text-center">Pengaduan Terbaru</h2>
       <div class="row">
         
         <!--Grid column-->
+        <?php foreach ($aduan as $news_item): ?>
         <div class="col-lg-3 col-md-6 mb-4">
 
           <!--Card-->
@@ -247,9 +236,9 @@ and open the template in the editor.
 
             <!--Card image-->
             <div class="view overlay overflow-hidden" style="height: 200px;">
-              <img src="https://fllajlombokbaratkab.or.id/foto_berita/18WhatsApp%20Image%202019-10-21%20at%205.35.44%20PM.jpeg" class="card-img-top"
+              <img src="<?php echo base_url();?>foto_aduan/medium_<?php echo $news_item['gambar']; ?>" class="card-img-top"
                 alt="">
-              <a href="#">
+              <a href="<?php echo base_url();?>complain/view/<?php echo $news_item['id_berita']; ?>">
                 <div class="mask rgba-white-slight"></div>
               </a>
             </div>
@@ -257,212 +246,35 @@ and open the template in the editor.
             <!--Card content-->
             <div class="card-body">
               <!--Title-->
-              <h4 class="card-title">Penebangan Pohon di Lembar</h4>
+              <h4 class="card-title"><?php echo $news_item['judul']; ?></h4>
               <!--Text-->
-              <p class="card-text">Pemotongan pohon .</p>
-              <a href="#!" class="btn btn-indigo">Baca Selengkapnya</a>
+              <p class="card-text"> <?php $isi=$news_item['isi_berita']; $isi=character_limiter($isi,200); echo $isi?></p>
+              <a href="<?php echo base_url();?>complain/view/<?php echo $news_item['id_berita']; ?>" class="btn btn-outline-blue">Baca Selengkapnya</a>
             </div>
 
           </div>
           <!--/.Card-->
 
         </div>
-        <!--Grid column-->
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4">
-
-          <!--Card-->
-          <div class="card" style="height: 500px;">
-
-            <!--Card image-->
-            <div class="view overlay overflow-hidden" style="height: 200px;">
-              <img src="https://fllajlombokbaratkab.or.id/foto_berita/81rapat%20bulan%20september.jpg" class="card-img-top"
-                alt="">
-              <a href="#">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-
-            <!--Card content-->
-            <div class="card-body">
-              <!--Title-->
-              <h4 class="card-title">Rapat Bulan September FLLAJ Kabupaten Lombok Barat 2019</h4>
-              <!--Text-->
-              <p class="card-text">Forum Lalu </p>
-              <a href="#!" class="btn btn-indigo">Baca Selengkapnya</a>
-            </div>
-
-          </div>
-          <!--/.Card-->
-
-        </div>
-        <!--Grid column-->
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4">
-
-          <!--Card-->
-          <div class="card" style="height: 500px;">
-
-            <!--Card image-->
-            <div class="view overlay overflow-hidden" style="height: 200px;">
-              <img src="https://fllajlombokbaratkab.or.id/foto_berita/24WhatsApp%20Image%202019-09-09%20at%209.14.04%20AM.jpeg" class="card-img-top"
-                alt="">
-              <a href="#">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-            <br>
-            <!--Card content-->
-            <div class="card-body">
-              <!--Title-->
-              <h4 class="card-title">Sosialisasi Pengelolaan Sampah di Desa Golong</h4>
-              <!--Text-->
-              <p class="card-text">Forum Lalu </p>
-              <a href="#" class="btn btn-indigo">Baca Selengkapnya</a>
-            </div>
-
-          </div>
-          <!--/.Card-->
-
-        </div>
+        <?php endforeach; ?> 
         <!--Grid column-->
 
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4">
-
-          <!--Card-->
-          <div class="card" style="height: 500px;">
-
-            <!--Card image-->
-            <div class="view overlay overflow-hidden" style="height: 200px;">
-              <img src="https://fllajlombokbaratkab.or.id/foto_berita/30WhatsApp%20Image%202019-09-09%20at%2012.44.03%20PM.jpeg" class="card-img-top"
-                alt="">
-              <a href="#">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-
-            <!--Card content-->
-            <div class="card-body">
-              <!--Title-->
-              <h4 class="card-title">Ekspose Hasil KRMS Rencana Penanganan Jalan Kabupaten Lombok Barat Tahun 2020</h4>
-              <!--Text-->
-              <p class="card-text">Sesuai dengan</p>
-              <a href="#" class="btn btn-indigo">Baca Selengkapnya</a>
-            </div>
-
-          </div>
-        </div>
-        <!--Grid column-->
-<!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4">
-
-          <!--Card-->
-          <div class="card" style="height: 500px;">
-
-            <!--Card image-->
-            <div class="view overlay overflow-hidden" style="height: 200px;">
-              <img src="https://fllajlombokbaratkab.or.id/foto_berita/30WhatsApp%20Image%202019-09-09%20at%2012.44.03%20PM.jpeg" class="card-img-top"
-                alt="">
-              <a href="#">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-
-            <!--Card content-->
-            <div class="card-body">
-              <!--Title-->
-              <h4 class="card-title">Ekspose Hasil KRMS Rencana Penanganan Jalan Kabupaten Lombok Barat Tahun 2020</h4>
-              <!--Text-->
-              <p class="card-text">Sesuai dengan</p>
-              <a href="#" class="btn btn-indigo">Baca Selengkapnya</a>
-            </div>
-
-          </div>
-        </div>
-        <!--Grid column-->
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4">
-
-          <!--Card-->
-          <div class="card" style="height: 500px;">
-
-            <!--Card image-->
-            <div class="view overlay overflow-hidden" style="height: 200px;">
-              <img src="https://fllajlombokbaratkab.or.id/foto_berita/30WhatsApp%20Image%202019-09-09%20at%2012.44.03%20PM.jpeg" class="card-img-top"
-                alt="">
-              <a href="#">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-
-            <!--Card content-->
-            <div class="card-body">
-              <!--Title-->
-              <h4 class="card-title">Ekspose Hasil KRMS Rencana Penanganan Jalan Kabupaten Lombok Barat Tahun 2020</h4>
-              <!--Text-->
-              <p class="card-text">Sesuai dengan</p>
-              <a href="#" class="btn btn-indigo">Baca Selengkapnya</a>
-            </div>
-
-          </div>
-        </div>
-        <!--Grid column-->
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4">
-
-          <!--Card-->
-          <div class="card" style="height: 500px;">
-
-            <!--Card image-->
-            <div class="view overlay overflow-hidden" style="height: 200px;">
-              <img src="https://fllajlombokbaratkab.or.id/foto_berita/30WhatsApp%20Image%202019-09-09%20at%2012.44.03%20PM.jpeg" class="card-img-top"
-                alt="">
-              <a href="#">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-
-            <!--Card content-->
-            <div class="card-body">
-              <!--Title-->
-              <h4 class="card-title">Ekspose Hasil KRMS Rencana Penanganan Jalan Kabupaten Lombok Barat Tahun 2020</h4>
-              <!--Text-->
-              <p class="card-text">Sesuai dengan</p>
-              <a href="#" class="btn btn-indigo">Baca Selengkapnya</a>
-            </div>
-
-          </div>
-        </div>
-        <!--Grid column-->
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4">
-
-          <!--Card-->
-          <div class="card" style="height: 500px;">
-
-            <!--Card image-->
-            <div class="view overlay overflow-hidden" style="height: 200px;">
-              <img src="https://fllajlombokbaratkab.or.id/foto_berita/30WhatsApp%20Image%202019-09-09%20at%2012.44.03%20PM.jpeg" class="card-img-top"
-                alt="">
-              <a href="#">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-
-            <!--Card content-->
-            <div class="card-body d-flex flex-column">
-              <!--Title-->
-              <h4 class="card-title">Ekspose Hasil KRMS Rencana Penanganan Jalan Kabupaten Lombok Barat Tahun 2020</h4>
-              <!--Text-->
-              <p class="card-text">Sesuai dengan</p>
-              <a href="#" class="btn btn-indigo align-self-end ">Baca Selengkapnya</a>
-            </div>
-
-          </div>
-        </div>
-        <!--Grid column-->
       </div>
+    </div>
+          
+          <div class="col-lg-3">
+              <h2 class="mb-5 font-weight-bold text-center">Berita Eksternal</h2>
+              <?php foreach ($eks as $news_item): ?>
+                <a href="<?php echo $news_item['link']; ?>" target='_blank'>
+                <div class="item">                                                                          
+                            <h5><?php echo $news_item['judul']; ?></h5>
+                            <p>Sumber : <?php echo $news_item['media']; ?></p>  
+                </div>
+                </a>
+              <?php endforeach; ?>
+          </div>
+              
+  </div>
       <!--Grid row-->
       </div>
         </section>
@@ -482,15 +294,3 @@ and open the template in the editor.
   </main>
   <!--Main layout-->
 
-<script>
-// variabel global marker
-
-	var map = L.map('map').setView([37.75, -122.23], 10);
-        L.esri.basemapLayer('Topographic').addTo(map);
-        map.whenReady(() => {
-            console.log('Map ready');
-            setTimeout(() => {
-            map.invalidateSize();
-            }, 0);
-        });
-</script>

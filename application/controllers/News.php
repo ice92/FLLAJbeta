@@ -16,6 +16,7 @@ class News extends CI_Controller{
         {
                 parent::__construct();
                 $this->load->model('NewsModel');
+                $this->load->model('AduanModel');
                 $this->load->helper('url_helper');
                 $this->load->helper('text'); // memanggil helper text
         }
@@ -25,7 +26,7 @@ class News extends CI_Controller{
                 $databerita=$this->db->get('berita');
                 $config['total_rows']=$databerita->num_rows();
                 $config['base_url']= base_url(). 'news/index';
-                $config['per_page']=5;
+                $config['per_page']=10;
                 $config['full_tag_open']="<nav aria-label='Page navigation example'>
                   <ul class='pagination pg-blue pagination-lg justify-content-center'>";
                 $config['full_tag_close']="</ul> </nav>";
@@ -52,7 +53,7 @@ class News extends CI_Controller{
                 
                 $data['news'] = $this->NewsModel->get_news($config['per_page'],$offset);
                 $data['title'] = 'Berita';
-
+                $data['stats'] = $this->AduanModel->get_stats();
                 $this->load->view('templates/header', $data);
                 $this->load->view('templates/headerpage', $data);
 //                $this->load->view('news/index', $data);
@@ -69,10 +70,10 @@ class News extends CI_Controller{
                 }
 
                 $data['title'] = "ISI BERITA";
-
+                $data['stats'] = $this->AduanModel->get_stats();
                 $this->load->view('templates/header', $data);
-                $this->load->view('templates/headerpage', $data);
-                $this->load->view('news/view', $data);
+                $this->load->view('templates/headerpage');
+                $this->load->view('news/view');
                 $this->load->view('templates/footer');
         }
 }

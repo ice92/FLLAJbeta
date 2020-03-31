@@ -28,24 +28,21 @@ and open the template in the editor.
                     <!--Grid column-->
                     <div class="col-md-6 col-lg-7 text-center text-md-right">
                         <!--Facebook-->
-                        <a class="fb-ic ml-0">
+                        <a class="fb-ic ml-0" href="https://www.facebook.com/fllaj.lombokbarat" target="_blank">
                             <i class="fab fa-facebook white-text mr-4 fa-2x"> </i>
                         </a>
                         <!--Twitter-->
-                        <a class="tw-ic">
+                        <a class="tw-ic" href="https://twitter.com/fllaj_lobar" target="_blank">
                             <i class="fab fa-twitter white-text mr-4 fa-2x"> </i>
-                        </a>
-                        <!--Google +-->
-                        <a class="gplus-ic">
-                            <i class="fab fa-google-plus white-text mr-4 fa-2x"> </i>
-                        </a>
-                        <!--Linkedin-->
-                        <a class="li-ic">
-                            <i class="fab fa-linkedin white-text mr-4 fa-2x"> </i>
-                        </a>
+                        </a>                        
+<!--                    
                         <!--Instagram-->
-                        <a class="ins-ic">
+                        <a class="ins-ic" href="https://www.instagram.com/fllaj_lobar/" target="_blank">
                             <i class="fab fa-instagram white-text mr-lg-4 fa-2x"> </i>
+                        </a>
+                        <!--Youtube-->
+                        <a class="li-ic" href="https://www.youtube.com/channel/UC7OIOhn6rn_R_6TU2ttwKPg" target="_blank">
+                            <i class="fab fa-youtube white-text mr-4 fa-2x"> </i>
                         </a>
                     </div>
                     <!--Grid column-->
@@ -77,19 +74,19 @@ and open the template in the editor.
                     </h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
-                        <a href="#!">Pengaduan Bulan Lalu :0</a>
+                        <a href="#!">Pengaduan Bulan Lalu : <?php echo $stats['totalm']; ?></a>
                     </p>
                     <p>
-                        <a href="#!">Pengaduan Total :352</a>
+                        <a href="#!">Pengaduan Total : <?php echo $stats['total']; ?></a>
                     </p>
                     <p>
-                        <a href="#!">Pengaduan Laki-laki :19</a>
+                        <a href="#!">Pengaduan Laki-laki : <?php echo $stats['totalp']; ?></a>
                     </p>
                     <p>
-                        <a href="#!">Pengaduan Perempuan :270</a>
+                        <a href="#!">Pengaduan Perempuan : <?php echo $stats['totall']; ?></a>
                     </p>
                     <p>
-                        <a href="#!">Pengaduan Anonim :63</a>
+                        <a href="#!">Pengaduan Anonim : <?php echo $stats['totalu']; ?></a>
                     </p>
                 </div>
                 <!--/.Second column-->
@@ -101,16 +98,16 @@ and open the template in the editor.
                     </h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
-                        <a href="http://dishub.lombokbaratkab.go.id/">Dinas Perhubungan Lobar</a>
+                        <a href="http://dishub.lombokbaratkab.go.id/" target="_blank">Dinas Perhubungan Lobar</a>
                     </p>
                     <p>
-                        <a href="http://dputr.lombokbaratkab.go.id/">Dinas PUTR Lobar</a>
+                        <a href="http://dputr.lombokbaratkab.go.id/" target="_blank">Dinas PUTR Lobar</a>
                     </p>
                     <p>
-                        <a href="https://ntb.polri.go.id/lobar/">Polres Lobar</a>
+                        <a href="https://ntb.polri.go.id/lobar/" target="_blank">Polres Lobar</a>
                     </p>
                     <p>
-                        <a href="http://fllaj.ntbprov.go.id/">FLLAJ Provinsi NTB</a>
+                        <a href="http://fllaj.ntbprov.go.id/" target="_blank">FLLAJ Provinsi NTB</a>
                     </p>
                 </div>
                 <!--/.Third column-->
@@ -127,8 +124,9 @@ and open the template in the editor.
                         <i class="fa fa-envelope mr-3"></i> aduan@fllajlombokbaratkab.or.id</p>
                     <p>
                         <i class="fa fa-phone mr-3"></i> +62 818 057 65 333</p>
-                    
-                </div>
+                    <script type="text/javascript" src="https://www.counters-free.net/count/5eem"></script><br>
+                    <a href='https://www.symptoma.es/'>https://www.symptoma.es</a>
+                    <script type='text/javascript' src='https://whomania.com/ctr?id=900f25e9303958ae4a1f67f7412230fbbb33653d'></script>
                 <!--/.Fourth column-->
 
             </div>
@@ -137,7 +135,7 @@ and open the template in the editor.
 
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2020 FLLAJ Kabupaten Lombok Barat<br>
-            <a href="https://dfat.gov.au/"> Supported by Australian Government.</a>
+            <a href="https://dfat.gov.au/"> Supported by Australian Government.</a>            
         </div>
         <!-- Copyright -->
 

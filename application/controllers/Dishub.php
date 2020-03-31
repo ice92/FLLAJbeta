@@ -7,11 +7,11 @@
  */
 
 /**
- * Description of Cost
+ * Description of Dishub
  *
  * @author ice
  */
-class Cost extends CI_Controller{
+class Dishub extends CI_Controller{
     public function __construct()
         {
                 parent::__construct();

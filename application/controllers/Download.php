@@ -16,6 +16,7 @@ class Download extends CI_Controller{
         {
                 parent::__construct();
                 $this->load->model('NewsModel');
+                $this->load->model('AduanModel');
                 $this->load->helper('url_helper');
         }
 
@@ -23,11 +24,11 @@ class Download extends CI_Controller{
         {
 //                $data['news'] = $this->NewsModel->get_news();
                 $data['title'] = 'Download';
-
+                $data['stats'] = $this->AduanModel->get_stats();
                 $this->load->view('templates/header', $data);
-                $this->load->view('templates/headerpage', $data);
+                $this->load->view('templates/headerpage');
 //                $this->load->view('news/index', $data);
-                $this->load->view('pages/Download', $data);
+                $this->load->view('pages/Download');
                 $this->load->view('templates/footer');
         }
 

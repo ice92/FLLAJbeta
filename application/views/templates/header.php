@@ -84,8 +84,8 @@ and open the template in the editor.
         <form class="form-inline">
           <div class="md-form my-0">
             <!--<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
-            <button class="btn purple-gradient">Daftar</button>
-            <button class="btn aqua-gradient">Masuk </button>
+            <button class="btn btn-indigo">Daftar</button>
+            <button class="btn btn-blue">Masuk </button>
           </div>
         </form>
       </div>
