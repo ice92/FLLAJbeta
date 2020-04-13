@@ -47,8 +47,7 @@ class Complain extends CI_Controller{
                 $this->pagination->initialize($config);
                 
                 $data['halaman']=$this->pagination->create_links();
-                $data['offset']=$offset;
-                
+                $data['offset']=$offset;               
                 
                 $data['news'] = $this->AduanModel->get_news($config['per_page'],$offset);
                 $data['title'] = 'Pengaduan';
@@ -75,15 +74,32 @@ class Complain extends CI_Controller{
                 $this->load->view('news/view2', $data);
                 $this->load->view('templates/footer');
         }
+        
         public function add(){
+                $config['upload_path'] = './foto_external/';
+                $config['allowed_types'] = 'gif|jpg|jpeg|png';
+                $config['max_size'] = 2000;
+                $config['max_width'] = 1500;
+                $config['max_height'] = 1500;
+                $this->load->library('upload', $config);
+                if (!$this->upload->do_upload('foto_aduan')) {
+                    $error = array('error' => $this->upload->display_errors());
+                    echo $error['error'];
+                } else {
+                    $data = array('image_metadata' => $this->upload->data());
+//                    $this->load->view('files/upload_result', $data);
+                    echo $data;
+                }
+                $image = $this->input->post('foto_aduan');
                 $nama = $this->input->post('nama');
 		$kontak = $this->input->post('kontak');
 		$aduan = $this->input->post('aduan');
                 $judul = $this->input->post('judul');
                 $tanggal = date('Y-m-d');
                 $jam = date("H:i:s");
+                $hari = date("w");
                 $seo = strtolower($aduan);
-                $seo = str_replace(' ', '-', $seo);
+                $seoo = str_replace(' ', '-', $seo);
                 $sex = $this->input->post('gender');
 		$data = array(
 			'username' => $nama,
@@ -92,11 +108,13 @@ class Complain extends CI_Controller{
 			'judul' => $judul,
                         'tanggal' => $tanggal,
                         'jam' => $jam,
-                        'judul_seo' => $seo,
-                        'gender' => $sex);
+                        'judul_seo' => $seoo,
+                        'gender' => $sex,
+                        'hari' => $hari,
+                        'gambar' => $image
+                        );
 		$this->AduanModel->input_data($data,'pengaduan');
-                redirect('complain/index');
-		print "<script type=\"text/javascript\">alert('Terima kasih atas pengaduan anda, Aduan akan segera diverifikasi !');</script>";
+                print "<script type=\"text/javascript\">alert('Terima kasih atas pengaduan anda, Aduan akan segera diverifikasi !');</script>";
                 
         }
 }

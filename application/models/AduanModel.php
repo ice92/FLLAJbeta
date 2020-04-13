@@ -20,7 +20,7 @@ class AduanModel extends CI_Model{
     public function get_news($perpage,$offset)
         {
                 $this->db->order_by('id_berita','DESC');
-                $query = $this->db->get('pengaduan',$perpage,$offset);
+                $query = $this->db->get_where('pengaduan',array('active' => 'Y'),$perpage,$offset);
                 return $query->result_array();        
         }
     public function get_anews($slug)
@@ -39,6 +39,8 @@ class AduanModel extends CI_Model{
         $stats['totall']=$query1->row()->totaladuan;
         $query1 = $this->db->query('SELECT COUNT(id_berita) AS totaladuan FROM pengaduan WHERE active="Y" AND gender="U";');
         $stats['totalu']=$query1->row()->totaladuan;
+        $query1 = $this->db->query('SELECT COUNT(id_berita) AS totaladuan FROM pengaduan WHERE active="Y" AND MONTH(tanggal)=   MONTH(CURRENT_DATE()) AND YEAR(tanggal) = YEAR(CURRENT_DATE());');
+        $stats['totali']=$query1->row()->totaladuan;
         return $stats;
     }
     function input_data($data,$table){

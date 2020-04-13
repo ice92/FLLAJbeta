@@ -31,7 +31,9 @@ and open the template in the editor.
         <script src='sdk/tomtom.min.js'></script>
     </head>
     <body>
-       
+        <div class="loader_bg">
+            <div class="loader"></div>
+        </div>   
   <!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
     <div class="container-fluid">
@@ -84,8 +86,8 @@ and open the template in the editor.
         <form class="form-inline">
           <div class="md-form my-0">
             <!--<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
-            <button class="btn btn-indigo">Daftar</button>
-            <button class="btn btn-blue">Masuk </button>
+<!--            <button class="btn btn-indigo">Daftar</button>
+            <button class="btn btn-blue">Masuk </button>-->
           </div>
         </form>
       </div>

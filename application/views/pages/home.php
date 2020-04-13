@@ -99,7 +99,7 @@ and open the template in the editor.
                 <div class="clearfix ">
                 <!-- Default inline 1-->
                     <div class="custom-control custom-radio custom-control-inline float-left ml-4">
-                      <input type="radio" class="custom-control-input" id="defaultInline2" name="gender" value="P">
+                      <input type="radio" class="custom-control-input" id="defaultInline2" name="gender" value="P" checked>
                       <label class="custom-control-label" for="defaultInline2">Perempuan</label>
                     </div> 
                     <div class="custom-control custom-radio custom-control-inline float-left">
@@ -114,7 +114,9 @@ and open the template in the editor.
                     <!--<button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalRegular">Regular map modal</button>-->
                     <!--<a data-toggle="modal" data-target="#modalRegular"><i class="fas fa-map-marker-alt indigo-text ml-4" ></i> Lokasi   </a>-->
                     <div class="text-center mt-3">
-                    <a data-toggle="modal" data-target="#modalFile"><i class="fas fa-camera-retro red-text ml-2" ></i> Masukan Foto   </a>
+                        <!--data-toggle="modal" data-target="#modalFile"-->
+                    <a><i class="fas fa-camera-retro red-text ml-2" ></i> Masukkan Foto : </a> 
+                    <input type="file" name="foto_aduan" id="foto_aduan" size:="33">
                     </div>
                 </div>
                     <!--Modal: Name-->
@@ -135,7 +137,7 @@ and open the template in the editor.
                           <!--Footer-->
                           <div class="modal-footer justify-content-center">
 
-                            <button type="button" class="btn btn-info btn-md">Simpan Lokasi <i class="fas fa-map-marker-alt ml-1"></i></button>
+                            <button type="button" class="btn btn-info btn-md">Simpan Lokasi <i class="fas fa-map-marker-alt ml-1"></i></button>                            
                             <button type="button" class="btn btn-outline-info btn-md" data-dismiss="modal">Close <i class="fas fa-times ml-1"></i></button>
 
                           </div>
@@ -164,21 +166,19 @@ and open the template in the editor.
                             <div class="custom-file">
                               <input type="file" class="custom-file-input" id="inputGroupFile01"
                                 aria-describedby="inputGroupFileAddon01">
-                              <label class="custom-file-label" for="inputGroupFile01">Pilih Berkas</label>
-                             
+                              <label class="custom-file-label" for="inputGroupFile01">Pilih Berkas</label>                             
                             </div>
-                          </div>
-                            <!--Google map-->
-                           
-                            
+                          </div>   
                           </div>
                         
                           <!--Footer-->
                           <div class="modal-footer justify-content-center">
- <button type="button" class="btn btn-outline-info btn-md" data-dismiss="modal">Close <i class="fas fa-times ml-1"></i></button>
-<!--                            <button type="button" class="btn btn-info btn-md">Save location <i class="fas fa-map-marker-alt ml-1"></i></button>
+                              <p> Anda dapat mengupload gambar berupa file .jpeg dengan ukuran maksimal 1 Mb / 1024 kb </p></br>
+                            <button type="button" class="btn btn-outline-info btn-md" data-dismiss="modal">Upload <i class="fas fa-times ml-1"></i></button>
+                            <button type="button" class="btn btn-outline-info btn-md" data-dismiss="modal">Close <i class="fas fa-times ml-1"></i></button>
+<!--                        <button type="button" class="btn btn-info btn-md">Save location <i class="fas fa-map-marker-alt ml-1"></i></button>
                             <button type="button" class="btn btn-outline-info btn-md" data-dismiss="modal">Close <i class="fas fa-times ml-1"></i></button>-->
-
+                            
                           </div>
 
                         </div>
@@ -191,11 +191,11 @@ and open the template in the editor.
                 <div class="text-center mt-3">
                   <button class="btn btn-indigo" type="submit" value="tambah">LAPOR!</button>
                 </form>
-                  <hr>
+<!--                  <hr>
                   <fieldset class="form-check">
                     
                       <label class="form-check-label" class="dark-grey-text"><a href="#">Daftar</a> untuk laporan lebih cepat dan mudah!</label>
-                  </fieldset>
+                  </fieldset>-->
                 </div>
               </div>
             </div>

@@ -74,16 +74,19 @@ and open the template in the editor.
                     </h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
+                        <a href="#!">Pengaduan Bulan Ini : <?php echo $stats['totali']; ?></a>
+                    </p>
+                    <p>
                         <a href="#!">Pengaduan Bulan Lalu : <?php echo $stats['totalm']; ?></a>
                     </p>
                     <p>
                         <a href="#!">Pengaduan Total : <?php echo $stats['total']; ?></a>
                     </p>
                     <p>
-                        <a href="#!">Pengaduan Laki-laki : <?php echo $stats['totalp']; ?></a>
+                        <a href="#!">Pengaduan Laki-laki : <?php echo $stats['totall']; ?></a>
                     </p>
                     <p>
-                        <a href="#!">Pengaduan Perempuan : <?php echo $stats['totall']; ?></a>
+                        <a href="#!">Pengaduan Perempuan : <?php echo $stats['totalp']; ?></a>
                     </p>
                     <p>
                         <a href="#!">Pengaduan Anonim : <?php echo $stats['totalu']; ?></a>
@@ -153,5 +156,10 @@ and open the template in the editor.
   <script type="text/javascript" src="<?php echo base_url();?>/js/mdb.min.js"></script>
   <!-- carousel -->
   <script type="text/javascript" src="<?php echo base_url();?>/js/carousel.js"></script>
+  <script>
+      setTimeout(function(){
+          $('.loader_bg').fadeToggle();
+      },1000);
+  </script>
     </body>
 </html>
