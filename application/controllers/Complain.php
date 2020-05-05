@@ -18,6 +18,7 @@ class Complain extends CI_Controller{
                 $this->load->model('AduanModel');
                 $this->load->helper('url_helper');
                 $this->load->helper('text');
+                $this->load->helper('form');
         }
 
         public function index($offset=0)
@@ -76,21 +77,23 @@ class Complain extends CI_Controller{
         }
         
         public function add(){
-                $config['upload_path'] = './foto_external/';
+                $config['upload_path'] = './foto_aduan/';
                 $config['allowed_types'] = 'gif|jpg|jpeg|png';
                 $config['max_size'] = 2000;
                 $config['max_width'] = 1500;
                 $config['max_height'] = 1500;
                 $this->load->library('upload', $config);
-                if (!$this->upload->do_upload('foto_aduan')) {
+                if (!$this->upload->do_upload('foto')) {
                     $error = array('error' => $this->upload->display_errors());
                     echo $error['error'];
-                } else {
-                    $data = array('image_metadata' => $this->upload->data());
-//                    $this->load->view('files/upload_result', $data);
-                    echo $data;
+                    $image = "NO IMAGE";
+                } else {                                        
+                    $uploadedImage = $this->upload->data();
+                    $this->resizeImage($uploadedImage['file_name']);   
+                    $image = $uploadedImage['file_name'];
                 }
-                $image = $this->input->post('foto_aduan');
+                
+                echo "hello".$image;
                 $nama = $this->input->post('nama');
 		$kontak = $this->input->post('kontak');
 		$aduan = $this->input->post('aduan');
@@ -116,5 +119,27 @@ class Complain extends CI_Controller{
 		$this->AduanModel->input_data($data,'pengaduan');
                 print "<script type=\"text/javascript\">alert('Terima kasih atas pengaduan anda, Aduan akan segera diverifikasi !');</script>";
                 
+        }
+         public function resizeImage($filename)
+        {
+            $source_path = $_SERVER['DOCUMENT_ROOT'] . '/foto_aduan/' . $filename;
+            $target_path = $_SERVER['DOCUMENT_ROOT'] . '/foto_aduan/thumb/';
+            $config_manip = array(
+                'image_library' => 'gd2',
+                'source_image' => $source_path,
+                'new_image' => $target_path,
+                'maintain_ratio' => FALSE,
+                'create_thumb' => TRUE,
+                'thumb_marker' => '',                
+                'width' => 200,
+                'height' => 200
+            );
+
+                $this->load->library('image_lib', $config_manip);
+                if (!$this->image_lib->resize()) {
+                    echo $this->image_lib->display_errors();
+                }
+
+                $this->image_lib->clear();
         }
 }

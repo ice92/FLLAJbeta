@@ -67,11 +67,12 @@ and open the template in the editor.
                 <!--Header-->
                 <div class="text-center">
                   <h3 class="dark-grey-text">
+                    <strong>ADA MASALAH LALU LINTAS DAN JALAN RAYA ?</strong>
                     <strong>Laporkan Aduan:</strong>
                   </h3>
                   <hr>
                 </div>
-                <form action="<?php echo base_url(). 'complain/add'; ?>" method="post">
+                <form action="<?php echo base_url(). 'complain/add'; ?>" method="post" enctype="multipart/form-data">
                 <!--Body-->
                 <div class="md-form">
                   <i class="fa fa-user prefix grey-text"></i>
@@ -116,7 +117,7 @@ and open the template in the editor.
                     <div class="text-center mt-3">
                         <!--data-toggle="modal" data-target="#modalFile"-->
                     <a><i class="fas fa-camera-retro red-text ml-2" ></i> Masukkan Foto : </a> 
-                    <input type="file" name="foto_aduan" id="foto_aduan" size:="33">
+                    <input type="file" name="foto" id="foto" size:="33">
                     </div>
                 </div>
                     <!--Modal: Name-->
@@ -148,46 +149,8 @@ and open the template in the editor.
                      
                     </div>
                     <!--Modal: Name-->
-                </div>
-                     <!--Modal: Name-->
-                    <div class="modal fade" id="modalFile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                      aria-hidden="true">
-                      <div class="modal-dialog modal-lg" role="document">
-
-                        <!--Content--> 
-                        <div class="modal-content">
-                                
-                          <!--Body-->
-                          <div class="modal-body mt-3 p-0">
-                            <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-                            </div>
-                            <div class="custom-file">
-                              <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                aria-describedby="inputGroupFileAddon01">
-                              <label class="custom-file-label" for="inputGroupFile01">Pilih Berkas</label>                             
-                            </div>
-                          </div>   
-                          </div>
-                        
-                          <!--Footer-->
-                          <div class="modal-footer justify-content-center">
-                              <p> Anda dapat mengupload gambar berupa file .jpeg dengan ukuran maksimal 1 Mb / 1024 kb </p></br>
-                            <button type="button" class="btn btn-outline-info btn-md" data-dismiss="modal">Upload <i class="fas fa-times ml-1"></i></button>
-                            <button type="button" class="btn btn-outline-info btn-md" data-dismiss="modal">Close <i class="fas fa-times ml-1"></i></button>
-<!--                        <button type="button" class="btn btn-info btn-md">Save location <i class="fas fa-map-marker-alt ml-1"></i></button>
-                            <button type="button" class="btn btn-outline-info btn-md" data-dismiss="modal">Close <i class="fas fa-times ml-1"></i></button>-->
-                            
-                          </div>
-
-                        </div>
-                        <!--/.Content-->
-
-                     
-                    </div>
-                    <!--Modal: Name-->
-                </div>
+                </div>                     
+                
                 <div class="text-center mt-3">
                   <button class="btn btn-indigo" type="submit" value="tambah">LAPOR!</button>
                 </form>
@@ -232,11 +195,11 @@ and open the template in the editor.
         <div class="col-lg-3 col-md-6 mb-4">
 
           <!--Card-->
-          <div class="card" style="height: 500px;">
+          <div class="card" style="max-height: 500px; min-height: 300px;">
 
             <!--Card image-->
             <div class="view overlay overflow-hidden" style="height: 200px;">
-              <img src="<?php echo base_url();?>foto_aduan/medium_<?php echo $news_item['gambar']; ?>" class="card-img-top"
+              <img src="<?php echo base_url();?>foto_aduan/thumb/<?php echo $news_item['gambar']; ?>" class="card-img-top"
                 alt="">
               <a href="<?php echo base_url();?>complain/view/<?php echo $news_item['id_berita']; ?>">
                 <div class="mask rgba-white-slight"></div>
@@ -246,10 +209,10 @@ and open the template in the editor.
             <!--Card content-->
             <div class="card-body">
               <!--Title-->
-              <h4 class="card-title"><?php echo $news_item['judul']; ?></h4>
+              <h5 class="card-title"><?php echo $news_item['judul']; ?></h5>
               <!--Text-->
-              <p class="card-text"> <?php $isi=$news_item['isi_berita']; $isi=character_limiter($isi,200); echo $isi?></p>
-              <a href="<?php echo base_url();?>complain/view/<?php echo $news_item['id_berita']; ?>" class="btn btn-outline-blue">Baca Selengkapnya</a>
+              <p class="card-text small"> <?php $isi=$news_item['isi_berita']; $isi=character_limiter($isi,100); echo $isi?>
+              <a href="<?php echo base_url();?>complain/view/<?php echo $news_item['id_berita']; ?>">Baca Selengkapnya</a> </p>
             </div>
 
           </div>

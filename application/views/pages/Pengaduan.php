@@ -26,7 +26,7 @@
                             <div class="carousel-inner z-depth-1-half" role="listbox">
                                 <!--First slide-->
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="<?php echo base_url();?>foto_aduan/medium_<?php echo $news_item['gambar']; ?>"
+                                    <img class="d-block w-100" src="<?php echo base_url();?>foto_aduan/thumb/<?php echo $news_item['gambar']; ?>"
                                         alt="First slide">
                                 </div>
                                 <!--/First slide-->

@@ -33,7 +33,7 @@ class Pages extends CI_Controller{
         $data['eks']=$this->EkxModel->get_news(7,0);
         $data['aduan']=$this->AduanModel->get_news(8,0);
         $data['stats'] = $this->AduanModel->get_stats();
-        print "<script type=\"text/javascript\">alert('Website FLLAJ Dalam Tahap Maintenance, Silahkan email ke aduan@fllajlombokbaratkab.or.id untuk pengaduan');</script>";
+//        print "<script type=\"text/javascript\">alert('Website FLLAJ Dalam Tahap Maintenance, Silahkan email ke aduan@fllajlombokbaratkab.or.id untuk pengaduan');</script>";
         $this->load->view('templates/header', $data);
         $this->load->view('pages/'.$page, $data);
         $this->load->view('templates/footer', $data);

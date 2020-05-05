@@ -8,9 +8,9 @@
 }
 .loader{
     border: 0 solid transparent;
-    background-image: url("https://fllajlombokbaratkab.or.id/img/logofllaj.png");
+/*    background-image: url("https://fllajlombokbaratkab.or.id/img/logofllaj.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;*/
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -83,7 +83,7 @@ header,
   body,
   header,
   .view {
-    height: 1100px;
+    height: 1470px;
   }
 }
 @media (min-width: 800px) and (max-width: 850px) {
