@@ -55,6 +55,7 @@ $route['complain'] = 'complain';
 $route['galery'] = 'galery';
 $route['PRIM'] = 'PRIM';
 $route['cost'] = 'cost';
+$route['admindinas'] = 'admin';
 $route['download'] = 'download';
 $route['(:any)'] = 'pages/view/$1';
 $route['default_controller'] = 'pages/view';

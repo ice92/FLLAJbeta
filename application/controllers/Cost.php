@@ -22,12 +22,12 @@ class Cost extends CI_Controller{
 
         public function index()
         {
-                $data['title'] = 'CoST';
+                $data['title'] = 'UNDER CONSTRUCTION';
                 $data['stats'] = $this->AduanModel->get_stats();
                 $this->load->view('templates/header', $data);
                 $this->load->view('templates/headerpage');
 //                $this->load->view('news/index', $data);
-                $this->load->view('pages/Login');
+//                $this->load->view('pages/Login');
                 $this->load->view('templates/footer');
         }
         

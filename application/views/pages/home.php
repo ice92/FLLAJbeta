@@ -18,7 +18,7 @@ and open the template in the editor.
 
   <div class="view" >
     <!-- Mask & flexbox options-->
-    <div class="mask rgba-indigo-strong d-flex justify-content-center align-items-center">
+    <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
       <!-- Content -->
       <div class="container-fluid">
         <!--Grid row-->
@@ -180,7 +180,7 @@ and open the template in the editor.
   <main class="mt-5">
 
     <!--Main container-->
-    <div class="container-fluid">
+    <div class="container">
         <section id="informasi">
         <!-- Heading -->
                 
@@ -192,15 +192,17 @@ and open the template in the editor.
         
         <!--Grid column-->
         <?php foreach ($aduan as $news_item): ?>
-        <div class="col-lg-3 col-md-6 mb-4">
+        <div class="col-lg-4 col-md-6 mb-6">
 
           <!--Card-->
           <div class="card" style="max-height: 500px; min-height: 300px;">
 
             <!--Card image-->
-            <div class="view overlay overflow-hidden" style="height: 200px;">
+            <div class="view overlay overflow-hidden  <?php if($news_item['gambar']=='NO IMAGE'){echo "d-none";} ?>" style="height: 200px;">
+                
               <img src="<?php echo base_url();?>foto_aduan/thumb/<?php echo $news_item['gambar']; ?>" class="card-img-top"
                 alt="">
+              
               <a href="<?php echo base_url();?>complain/view/<?php echo $news_item['id_berita']; ?>">
                 <div class="mask rgba-white-slight"></div>
               </a>
@@ -213,6 +215,7 @@ and open the template in the editor.
               <!--Text-->
               <p class="card-text small"> <?php $isi=$news_item['isi_berita']; $isi=character_limiter($isi,100); echo $isi?>
               <a href="<?php echo base_url();?>complain/view/<?php echo $news_item['id_berita']; ?>">Baca Selengkapnya</a> </p>
+              <p><a><strong><?php echo $news_item['username']; echo '/'.$news_item['gender'];?></strong></a></br> <?php echo $news_item['tanggal']; ?></p>
             </div>
 
           </div>
@@ -237,23 +240,40 @@ and open the template in the editor.
               <?php endforeach; ?>
           </div>
               
-  </div>
-      <!--Grid row-->
+  </div> 
+      
+<!--      <hr>
+      <div class="container-fluid">
+      <div class="row">
+      <div class="col-lg-12">
+          <h2 class="mb-5 font-weight-bold text-center">Visi dan Misi FLLAJ</h2>
+      <div class="row">
+                <p style="text-align:justify">Jalan sebagai penghubung antar lokasi sentra-sentra ekonomi, pariwisata, industri dan sebagainya merupakan salah satu bagian terpenting dari prasarana yang harus diperhatikan, oleh karena itu perlu dilakukan percepatan pembangunan untuk mendorong pertumbuhan ekonomi secara signifikan. Akan tetapi banyak permasalahan yang dihadapi pemerintah pusat maupun daerah dalam melakukan percepatan pembangunan tersebut.</p>
+
+      <p style="text-align:justify">Permasalahan tersebut tidak hanya menyangkut fisik dari jalan itu saja. Masalah lalu lintas dan angkutan jalan merupakan masalah lain yang perlu penanganan tersendiri dan harus segera dilakukan. Mengingat permasalahan yang sedemikian kompleks dan penanganannya melibatkan beberapa instansi maka harus ada upaya yang signifikan untuk mengatasi hal tersebut. Salah satu upaya yang dilakukan pemerintah adalah dengan membentuk Forum Lalu Lintas dan Angkutan Jalan di setiap provinsi dan kabupaten/kota.</p>
+
+      <p style="text-align:justify">Forum Lalu Lintas dan Angkutan Jalan sebagaimana disebutkan pada Peraturan Pemerintah Republik Indonesia Nomor 37 Tahun 2011 Tentang Forum Lalu Lintas Dan Angkutan Jalan adalah wahana koordinasi antar instansi penyelenggara lalu lintas dan angkutan jalan.</p>
+
+      <p style="text-align:justify">Forum Lalu Lintas dan Angkutan Jalan&nbsp; berfungsi sebagai wahana untuk menyinergikan tugas pokok dan fungsi setiap penyelenggara lalu lintas dan angkutan jalan dalam penyelenggaraan lalu lintas dan angkutan jalan.</p>
+
+      <p style="text-align:justify">Fungsi menyinergikan dimaksudkan untuk:</p>
+
+      <ol>
+              <li style="text-align:justify">Menganalisis permasalahan;</li>
+              <li style="text-align:justify">Menjembatani, menemukan solusi, dan meningkatkan kualitas pelayanan.<br />
+              Salah satu upaya Pemerintah untuk mengatasi masalah tersebut adalah dengan mendorong Pemerintah Daerah untuk meningkatkan peran dalam pembangunan insfrastruktur jalan melalui Program Hibah Peningkatan Kinerja dan Pemeliharaan Jalan Provinsi (PRIM).</li>
+      </ol>
+
+      <p style="text-align:justify">PRIM merupakan kerjasama antara Pemerintah Australia dan Pemerintah Indonesia melalui program Indonesia Infrastructure Initiative &ndash; IndII yang bertujuan untuk meningkatkan kapabilitas Pemerintah Provinsi Nusa Tenggara Barat dalam pengelolaan dan pemeliharaan jalan; termasuk dorongan kepada pemerintah provinsi untuk meningkatkan alokasi dana pemeliharan jalan.</p>
+
+      <p style="text-align:justify">Salah satu program dari PRIM adalah melakukan pemberdayaan terhadap Forum Lalu Lintas dan Angkutan Jalan Kabupaten Lombok Barat yang dibentuk berdasarkan SK BupatiLombok Barat Nomor 58A/126/DISHUB/2017 tentang Pembentukan Forum Lalu Lintas Dan Angkutan Jalan, Kelompok Kerja dan Sekretariat Forum Lalu Lintas dan Angkutan Jalan Kabupaten Lombok Barat Tahun 2017-2022. Jumlah anggota FLLAJ yang terdapat pada surat keputusan tersebut adalah sebanyak 31 anggota yang terdiri dari beberapa pejabat eselon II, III dan IV Pemerintah Kabupaten Lombo Barat, Polres Lombok Barat, unsur masyarakat (LSM), akademisi, Jasa Raharja, Organda dan sebagainya.</p>
+
       </div>
-        </section>
-      <!--Grid row-->
-      <hr class="my-5">
-      <section id="Aduan">
-        <!-- Heading -->
-      </section>
-    </div>
-    <!--Main container-->
-<div class="container">
-	<div class="row">
-	</div>
-	<div class="row">	    
-	</div>
-</div>
+      </div>
+      </div>
+          </div>-->
+      
+      
   </main>
   <!--Main layout-->
 

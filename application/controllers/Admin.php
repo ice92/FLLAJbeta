@@ -7,11 +7,11 @@
  */
 
 /**
- * Description of PRIM
+ * Description of Cost
  *
  * @author ice
  */
-class PRIM extends CI_Controller{
+class Admin extends CI_Controller{
     public function __construct()
         {
                 parent::__construct();
@@ -22,13 +22,12 @@ class PRIM extends CI_Controller{
 
         public function index()
         {
-//                $data['news'] = $this->NewsModel->get_news();
-                $data['title'] = 'PRIM';
+                $data['title'] = 'Admin';
                 $data['stats'] = $this->AduanModel->get_stats();
                 $this->load->view('templates/header', $data);
                 $this->load->view('templates/headerpage');
 //                $this->load->view('news/index', $data);
-                $this->load->view('pages/PRIM');
+                $this->load->view('pages/Admin');
                 $this->load->view('templates/footer');
         }
         

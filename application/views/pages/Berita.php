@@ -94,15 +94,13 @@
                 <!--Grid row-->
                 
                 </div>
-                    <div class="col-md-3">
-                        <h2>Navigasi</h2>
-                        
-
-                    </div>
+                    
+                    
+                   
             </div>
-
 
             
             </section>
             <!--Section: Gallery-->
+            <?php echo $halaman; ?>
             

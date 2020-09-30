@@ -26,7 +26,7 @@ class Complain extends CI_Controller{
                 $databerita=$this->db->get('pengaduan');
                 $config['total_rows']=$databerita->num_rows();
                 $config['base_url']= base_url(). 'complain/index';
-                $config['per_page']=5;
+                $config['per_page']=10;
                 $config['full_tag_open']="<nav aria-label='Page navigation example'>
                   <ul class='pagination pg-blue pagination-lg justify-content-center'>";
                 $config['full_tag_close']="</ul> </nav>";
@@ -77,6 +77,8 @@ class Complain extends CI_Controller{
         }
         
         public function add(){
+                
+                $har = array('','Senin','Selasa','Rabu','Kamis', 'Jumat', 'Sabtu', 'Minggu');
                 $config['upload_path'] = './foto_aduan/';
                 $config['allowed_types'] = 'gif|jpg|jpeg|png';
                 $config['max_size'] = 2000;
@@ -85,7 +87,7 @@ class Complain extends CI_Controller{
                 $this->load->library('upload', $config);
                 if (!$this->upload->do_upload('foto')) {
                     $error = array('error' => $this->upload->display_errors());
-                    echo $error['error'];
+//                    echo $error['error'];
                     $image = "NO IMAGE";
                 } else {                                        
                     $uploadedImage = $this->upload->data();
@@ -93,14 +95,14 @@ class Complain extends CI_Controller{
                     $image = $uploadedImage['file_name'];
                 }
                 
-                echo "hello".$image;
+//                echo "hello".$image;
                 $nama = $this->input->post('nama');
 		$kontak = $this->input->post('kontak');
 		$aduan = $this->input->post('aduan');
                 $judul = $this->input->post('judul');
                 $tanggal = date('Y-m-d');
                 $jam = date("H:i:s");
-                $hari = date("w");
+                $hari = $har[date("w")];
                 $seo = strtolower($aduan);
                 $seoo = str_replace(' ', '-', $seo);
                 $sex = $this->input->post('gender');
@@ -117,7 +119,12 @@ class Complain extends CI_Controller{
                         'gambar' => $image
                         );
 		$this->AduanModel->input_data($data,'pengaduan');
-                print "<script type=\"text/javascript\">alert('Terima kasih atas pengaduan anda, Aduan akan segera diverifikasi !');</script>";
+                $data['stats'] = $this->AduanModel->get_stats();
+                $data['title'] = "TERIMA KASIH";
+                $this->load->view('templates/header', $data);                
+                $this->load->view('templates/headerpage', $data);
+                $this->load->view('news/add', $data);
+                $this->load->view('templates/footer');
                 
         }
          public function resizeImage($filename)
@@ -137,7 +144,7 @@ class Complain extends CI_Controller{
 
                 $this->load->library('image_lib', $config_manip);
                 if (!$this->image_lib->resize()) {
-                    echo $this->image_lib->display_errors();
+//                    echo $this->image_lib->display_errors();
                 }
 
                 $this->image_lib->clear();

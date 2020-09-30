@@ -12,7 +12,7 @@ and open the template in the editor.
 <section class='container-fluid'>
 <?php
 echo '<h2>'.$news_item['judul'].'</h2>';?>
-<p>by <a><strong><?php echo $news_item['username']; ?></strong></a>, <?php echo $news_item['tanggal']; ?></p>
+<p>by <a><strong><?php echo $news_item['username']; echo '/'.$news_item['gender'];?></strong></a>, <?php echo $news_item['tanggal']; ?></p>
 <div class="row">
     <div class="col-md-6 mb-6 overflow-auto" style="height: 550px;">
         <div id="carousel-example-1z" class="carousel slide carousel-fade carousel-fade" data-ride="carousel">

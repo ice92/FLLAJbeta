@@ -59,7 +59,7 @@ and open the template in the editor.
               ?>
           </li>
           <li class="nav-item <?php if($title=='Informasi') echo 'active';?> ">
-            <a class="nav-link" href="<?php echo base_url()?>news">Informasi</a>
+            <a class="nav-link" href="<?php echo base_url()?>news">Berita</a>
             <?php if($title=='Informasi')
                   echo '<span class="sr-only">(current)</span>';
               ?>
@@ -93,7 +93,7 @@ and open the template in the editor.
       </div>
     </div>
   </nav>
- <header>
+ <!--<header>-->
   <!-- Navbar -->
   
    

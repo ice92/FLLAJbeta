@@ -30,8 +30,8 @@ class Pages extends CI_Controller{
 
         $data['title'] = ucfirst($page); // Capitalize the first letter
         $data['news'] = $this->NewsModel->get_news(7,0);
-        $data['eks']=$this->EkxModel->get_news(7,0);
-        $data['aduan']=$this->AduanModel->get_news(8,0);
+        $data['eks']=$this->EkxModel->get_news(4,0);
+        $data['aduan']=$this->AduanModel->get_news(3,0);
         $data['stats'] = $this->AduanModel->get_stats();
 //        print "<script type=\"text/javascript\">alert('Website FLLAJ Dalam Tahap Maintenance, Silahkan email ke aduan@fllajlombokbaratkab.or.id untuk pengaduan');</script>";
         $this->load->view('templates/header', $data);

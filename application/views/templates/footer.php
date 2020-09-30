@@ -20,7 +20,7 @@ and open the template in the editor.
                 <div class="row py-4 d-flex align-items-center">
 
                     <!--Grid column-->
-                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-md-0">
                         <h6 class="mb-0 white-text">Ayo kunjungi sosial media FLLAJ Lombok Barat!</h6>
                     </div>
                     <!--Grid column-->
@@ -54,7 +54,7 @@ and open the template in the editor.
         <!-- Social buttons -->
 
         <!--Footer Links-->
-        <div class="container-fluid mt-5 mb-4 text-center text-md-left">
+        <div class="container-fluid mt-5 text-center text-md-left">
             <div class="row mt-3">
 
                 <!--First column-->
@@ -99,7 +99,7 @@ and open the template in the editor.
                     <h6 class="text-uppercase font-weight-bold">
                         <strong>Link Terkait</strong>
                     </h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">                    
                     <p>
                         <a href="http://dishub.lombokbaratkab.go.id/" target="_blank">Dinas Perhubungan Lobar</a>
                     </p>
@@ -108,6 +108,9 @@ and open the template in the editor.
                     </p>
                     <p>
                         <a href="https://ntb.polri.go.id/lobar/" target="_blank">Polres Lobar</a>
+                    </p>
+                    <p>
+                        <a href="https://ombudsman.go.id/" target="_blank">OMBUDSMAN</a>
                     </p>
                     <p>
                         <a href="http://fllaj.ntbprov.go.id/" target="_blank">FLLAJ Provinsi NTB</a>
