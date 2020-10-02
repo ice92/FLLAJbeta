@@ -141,7 +141,7 @@ and open the template in the editor.
 
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2020 FLLAJ Kabupaten Lombok Barat<br>
-            <a href="https://dfat.gov.au/"> Supported by Australian Government.</a>            
+            <a href="https://lombokbaratkab.go.id/"> Supported by West Lombok Government and the UK Prosperity Fund, ASEAN Economic Reform Program.</a>            
         </div>
         <!-- Copyright -->
 

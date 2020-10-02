@@ -1,17 +1,17 @@
-<section id="gallery" class="container-fluid">
+<section id="gallery" class="container">
 
                 <!-- Heading -->
                 <br><br>
 <!--                <h2 class="mb-5 font-weight-bold text-center">Berita FLLAJ</h2>-->
                <?php echo $halaman; ?>
                 <div class="row">
-                <div class="col-md-9">
+                <div class="col-md-12">
     <?php foreach ($news as $news_item): ?>
                 <!--Grid row-->
                 <div class="row">
 
                     <!--Grid column-->
-                    <div class="col-md-6 mb-4 overflow-auto" style="height: 250px;">
+                    <div class="col-md-6 mb-4 overflow-auto" style="height: 250px;" <?php if($news_item['gambar']=="NO IMAGE") echo "hidden"?>>
 
                         <!--Carousel Wrapper-->
                         <div id="carousel-example-1z" class="carousel slide carousel-fade carousel-fade" data-ride="carousel">
@@ -25,9 +25,9 @@
                             <!--Slides-->
                             <div class="carousel-inner z-depth-1-half" role="listbox">
                                 <!--First slide-->
-                                <div class="carousel-item active">
+                                <div class="carousel-item active" >
                                     <img class="d-block w-100" src="<?php echo base_url();?>foto_aduan/thumb/<?php echo $news_item['gambar']; ?>"
-                                        alt="First slide">
+                                         alt="First slide">
                                 </div>
                                 <!--/First slide-->
                                 <!--Second slide-->
@@ -61,7 +61,7 @@
                     <!--Grid column-->
 
                     <!--Grid column-->
-                    <div class="col-md-6">
+                    <div class="col-md-<?php if($news_item['gambar']=="NO IMAGE") echo "12"; else echo "6";?>" >
 
                         <!--Excerpt-->
                         <a href="" class="teal-text">
@@ -89,20 +89,14 @@
 
                 </div>
                 <!--Grid row-->
-<!--Grid row--><hr class="my-5">
+<!--Grid row--><hr class="my-2">
 <?php endforeach; ?>
                 <!--Grid row-->
                 
                 </div>
-                    <div class="col-md-3">
-                        <h2>Navigasi</h2>
-                        
-
-                    </div>
+                    
             </div>
-
-
-            
+                <?php echo $halaman; ?>
             </section>
             <!--Section: Gallery-->
             

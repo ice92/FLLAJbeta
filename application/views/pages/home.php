@@ -276,4 +276,63 @@ and open the template in the editor.
       
   </main>
   <!--Main layout-->
+<div class="mt-5">
+  
+  <section class="grey lighten-2 pt-5">
+      <div class="flex-center">
+          <h3>Supported By</h3>
+      </div>    
+    <div class="container pt-3">       
+      <!--First row-->
+      <div class="row">
 
+        <!--First column-->
+        <div class="col-md-4 flex-center">
+          <img src="<?php echo base_url();?>/img/stakeholder/1.png" style="height:80px;" class="img-fluid wow fadeIn" data-wow-delay=".2s">
+        </div>
+        <!--/First column-->
+
+        <!--Second column-->
+        <div class="col-md-4 flex-center">
+          <img src="<?php echo base_url();?>/img/stakeholder/2.png" style="height:80px;" class="img-fluid wow fadeIn" data-wow-delay=".4s">
+        </div>
+        <!--/Second column-->
+
+        <!--Third column-->
+        <div class="col-md-4 flex-center">
+          <img src="<?php echo base_url();?>/img/stakeholder/4.png" style="height:80px;" class="img-fluid wow fadeIn" data-wow-delay=".4s">
+        </div>
+        <!--/Third column-->
+     </div>     
+    </div>    
+  </section>
+    
+<section class="grey lighten-2 py-5">
+    <div class="container">       
+      <!--First row-->
+      <div class="row">
+        <div class="col-md-3 flex-center">
+          <img src="<?php echo base_url();?>/img/stakeholder/5.png" style="height:80px;" class="img-fluid wow fadeIn" data-wow-delay=".2s">
+        </div>
+        <!--/Fourth column-->
+        <!--Fourth column-->
+        <div class="col-md-3 flex-center">
+          <img src="<?php echo base_url();?>/img/stakeholder/6.png" style="height:80px;" class="img-fluid wow fadeIn" data-wow-delay=".2s">
+        </div>
+        <!--/Fourth column-->
+        <!--Fourth column-->
+        <div class="col-md-3 flex-center">
+          <img src="<?php echo base_url();?>/img/stakeholder/7.png" style="height:80px;" class="img-fluid wow fadeIn" data-wow-delay=".2s">
+        </div>
+        <!--/Fourth column-->
+        <!--Fourth column-->
+        <div class="col-md-3 flex-center">
+          <img src="<?php echo base_url();?>/img/stakeholder/8.png" style="height:80px;" class="img-fluid wow fadeIn" data-wow-delay=".2s">
+        </div>
+        <!--/Fourth column-->
+      </div>
+      <!--/First row-->
+      
+    </div>    
+  </section>
+</div>
