@@ -45,6 +45,8 @@
             <h3 class="mb-0 font-weight-bold text-center black-text">Dokumen dan Peraturan</h3>
         </div>
     </div>
+    <a href="https://drive.google.com/file/d/1bhupPEfDy1PEDZXr3_qtoryuSYimVUlu/preview" target="_blank">SK Penetapan Pengurus Forum, Anggota Kelompok Kerja dan Sekretariat FLLAJ Kab. Lobar 2021</a>
+    <br>
     <a href="https://drive.google.com/file/d/1A5NXnc6F2W0z5-hE-8RhpRqGqM2uPZwX/preview" target="_blank">SK Penetapan Pengurus Forum, Anggota Kelompok Kerja dan Sekretariat FLLAJ Kab. Lobar 2020</a>
     <br>
     <a href="https://drive.google.com/file/d/1QOyO2SBMMSjyFgnENEySPmWCkI-FqGUK/preview" target="_blank">SK Penetapan Pengurus Forum, Anggota Kelompok Kerja dan Sekretariat FLLAJ Kab. Lobar 2019</a>

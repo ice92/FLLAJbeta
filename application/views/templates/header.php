@@ -37,7 +37,7 @@ and open the template in the editor.
   <!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="<?php echo base_url()?>home">
+      <a class="navbar-brand" href="<?php echo base_url()?>">
         <strong>FLLAJ</strong>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +46,7 @@ and open the template in the editor.
       <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item <?php if($title=='Home') echo 'active';?> ">
-            <a class="nav-link" href="<?php echo base_url()?>home">Beranda
+            <a class="nav-link" href="<?php echo base_url()?>">Beranda
               <?php if($title=='Home')
                   echo '<span class="sr-only">(current)</span>';
               ?>
@@ -71,8 +71,14 @@ and open the template in the editor.
               ?>
           </li>
           <li class="nav-item <?php if($title=='CoST') echo 'active';?> ">
-            <a class="nav-link" href="<?php echo base_url()?>cost">CoST</a>
+            <a class="nav-link" href="https://intras.fllajlombokbaratkab.or.id/">CoST</a>
             <?php if($title=='CoST')
+                  echo '<span class="sr-only">(current)</span>';
+              ?>
+          </li>
+          <li class="nav-item <?php if($title=='PKB') echo 'active';?> ">
+            <a class="nav-link" href="<?php echo base_url()?>pkb">PKB</a>
+            <?php if($title=='PKB')
                   echo '<span class="sr-only">(current)</span>';
               ?>
           </li>

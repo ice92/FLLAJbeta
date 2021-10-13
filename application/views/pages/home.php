@@ -27,11 +27,12 @@ and open the template in the editor.
           <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text text-center text-md-left ">
             
             <img src="<?php echo base_url();?>/img/logo.png" class="img-fluid display-4" alt="Responsive image">
-            <hr class="hr-light">
-            <h6 class="mb-3">Layanan pelaporan online permasalahan lalu lintas dan jalan raya, portal informasi masalah lalu lintas dan jalan raya serta data pekerjaan jalan di Kabupaten Lombok Barat.</h6>
-            <a class="btn btn-outline-white" href="<?php echo base_url()?>cost">Lihat data pekerjaan jalan (CoST)</a> 
+
+            <p class="mb-3 ml-3">Layanan pelaporan online permasalahan lalu lintas, jalan raya dan pelayanan Perhubungan, portal informasi masalah lalu lintas dan jalan raya serta data pekerjaan jalan di Kabupaten Lombok Barat.</p>
+            <a class="btn btn-outline-white ml-3" href="<?php echo base_url()?>cost">Lihat data pekerjaan jalan (CoST)</a> 
             <div class="col-md-12 text-center">
-                <hr>
+                <!--<hr>-->
+                <br/>
 	        <h5>BERITA TERBARU</h5>                            
 	    </div>
             		<div class="MultiCarousel" data-items="1,1,2,2" data-slide="1" id="MultiCarousel"  data-interval="1000">            
@@ -67,7 +68,7 @@ and open the template in the editor.
                 <!--Header-->
                 <div class="text-center">
                   <h3 class="dark-grey-text">
-                    <strong>ADA MASALAH LALU LINTAS DAN JALAN RAYA ?</strong>
+                    <strong>ADA MASALAH LALU LINTAS, JALAN RAYA, DAN PELAYANAN PERHUBUNGAN ?</strong>
                     <strong>Laporkan Aduan:</strong>
                   </h3>
                   <hr>
